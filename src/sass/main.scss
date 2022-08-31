@@ -1,5 +1,12 @@
 @import './base/common';
-@import './example';
+
+@import './components/menu';
+@import './components/logo';
+@import './components/container';
+@import './components/section';
+@import './components/title';
+@import './components/visually-hidden';
+@import './components/buttons';
 
 @import './layout/header';
 @import './layout/hero';
@@ -10,3 +17,5 @@
 @import './layout/customer_reviews';
 @import './layout/contacts';
 @import './layout/footer';
+
+@import './utils/breakpoints';
