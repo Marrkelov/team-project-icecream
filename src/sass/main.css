@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
 body {
   font-family: var(--primary-font);
   color: var(--text-color-main);
@@ -53,7 +51,4 @@ textarea {
 
 .icon {
   fill: currentColor;
-} /*# sourceMappingURL=main.css.map */
-=======
-@import '~node_modules/modern-normalize/modern-normalize.css';/*# sourceMappingURL=main.css.map */
->>>>>>> Stashed changes
+}/*# sourceMappingURL=main.css.map */
