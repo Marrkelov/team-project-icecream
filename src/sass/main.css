@@ -51,4 +51,35 @@ textarea {
 
 .icon {
   fill: currentColor;
+}
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --title-font: "Seymour One", sans-serif;
+  --background-color-main: #84a178;
+  --background-color-secondary: #f8d24e;
+  --background-color-modal: #fff;
+  --background-color-tablet-menu: #97af8d;
+  --background-color-mobile-menu: #85a279;
+  --background-color-icon-social: #f8d24e;
+  --border-modal: #f8d24e;
+  --border-modal-input: #84a178;
+  --icecream-color: #aec6a5;
+  --icecoffee-color: #efd478;
+  --milkshakes-color: #d6936d;
+  --buttom-color-main: #f8d24e;
+  --buttom-color-accent: #0a8817;
+  --buttom-color-disable: #ababab;
+  --bottom-color-main: #f8d24e;
+  --bottom-color-accent: #0a8817;
+  --bottom-color-disable: #ababab;
+  --text-color-main: #fcfcfc;
+  --text-color-secondary: #000;
+  --text-color-titles: #131313;
+  --text-color-address: #d6936d;
+  --text-color-time: #ababab;
+  --text-color-accent-menu: #000;
+  --text-color-secondary-footer: #7a7a7a;
+  --text-color-social: #000;
 }/*# sourceMappingURL=main.css.map */
