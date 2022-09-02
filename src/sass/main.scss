@@ -1,5 +1,8 @@
 @import './base/common';
 
+@import './utils/vars';
+@import './utils/breakpoints';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/product';
@@ -9,6 +12,3 @@
 @import './layout/customer_reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
-@import './utils/vars';
-@import './utils/breakpoints';
