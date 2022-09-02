@@ -3,12 +3,16 @@
   --secondary-font: 'Roboto', sans-serif;
   --title-font: 'Seymour One', sans-serif;
 
+  --speed-animation: 250ms;
+  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+
   --background-color-main: #84a178;
   --background-color-secondary: #f8d24e;
   --background-color-modal: #fff;
   --background-color-tablet-menu: #97af8d;
   --background-color-mobile-menu: #85a279;
   --background-color-icon-social: #f8d24e;
+  --background-color-address: #fcfcfc;
 
   --border-modal: #f8d24e;
   --border-modal-input: #84a178;
@@ -17,13 +21,9 @@
   --icecoffee-color: #efd478;
   --milkshakes-color: #d6936d;
 
-  --buttom-color-main: #f8d24e;
-  --buttom-color-accent: #0a8817;
-  --buttom-color-disable: #ababab;
-
-  --bottom-color-main: #f8d24e;
-  --bottom-color-accent: #0a8817;
-  --bottom-color-disable: #ababab;
+  --button-color-main: #f8d24e;
+  --button-color-accent: #0a8817;
+  --button-color-disable: #ababab;
 
   --text-color-main: #fcfcfc;
   --text-color-secondary: #000;
@@ -33,4 +33,7 @@
   --text-color-accent-menu: #000;
   --text-color-secondary-footer: #7a7a7a;
   --text-color-social: #000;
+  --text-color-button: #000;
+  --text-color-button-frameless: #f8d24e;
+  --text-color-button-frameless-accent: #0a8817;
 }

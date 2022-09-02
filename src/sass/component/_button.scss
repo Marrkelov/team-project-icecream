@@ -1,0 +1,56 @@
+.header__button,
+.about__button {
+  padding: 12px 33px;
+  border-radius: 10px;
+  border: none;
+
+  @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
+
+  background-color: var(--button-color-main);
+
+  transition: background-color var(--speed-animation) var(--animation-type);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-accent);
+  }
+}
+
+.hero__button {
+  padding: 7px 16px;
+  border-radius: 10px;
+
+  border: 2px solid var(--button-color-main);
+
+  @include font(8px, 600, 9px, 0.03em, var(--text-color-button));
+
+  background-color: transparent;
+
+  transition: border-color var(--speed-animation) var(--animation-type);
+
+  &:hover,
+  &:focus {
+    border-color: var(--button-color-accent);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
+  }
+}
+
+.hero__button--frameless {
+  border: none;
+  background-color: transparent;
+  text-decoration-line: underline;
+
+  @include font(8px, 600, 9px, 0.03em, var(--text-color-button-frameless));
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-button-frameless-accent);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(14px, 600, 17px, 0.03em, var(--text-color-button-frameless));
+  }
+}
