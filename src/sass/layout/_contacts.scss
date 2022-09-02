@@ -83,10 +83,11 @@
 }
 
 
-.contacts__btn-list {
-    margin-top: 32px;
+.contacts__button,
+.contacts__button--without-bg{
+    display: block;
 }
-
-.contacts__btn-item:not(:last-child) {
-    margin-bottom: 8px;
+.contacts__button{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
