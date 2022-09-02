@@ -1,0 +1,108 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: var(--text-color-main);
+    max-width: 280px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts__item-title {
+    display: inline-block;
+    padding: 0 23px;
+    margin-bottom: 20px;
+
+    @include font(12px, 500, 22px, 0.04em, var(--text-color-main));
+    text-transform: uppercase;
+
+    background-color: var(--background-color-secondary);
+    border-radius: 4px;
+}
+
+.contacts__list-address {
+    position: relative;
+    margin-bottom: 48px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -34%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+
+.contacts__list-shedule {
+    position: relative;
+    margin-bottom: 48px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -25%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+
+.contacts__item--orange {
+    margin-top: 8px;
+}
+
+.contacts__item--grey:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.contacts__item--black {
+    @include font(12px, 500, 22px, 0.04em, var(--text-color-secondary));
+    font-style: normal;
+}
+
+.contacts__link--orange {
+    @include font(12px, 500, 22px, 0.04em, var(--text-color-address));
+    font-style: normal;
+}
+
+.contacts__item--grey {
+    @include font(12px, 500, 22px, 0.04em, var(--text-color-time));
+    font-style: normal;
+}
+
+
+.contacts__btn-list {
+    margin-top: 32px;
+}
+
+.contacts__btn-item:not(:last-child) {
+    margin-bottom: 8px;
+}
