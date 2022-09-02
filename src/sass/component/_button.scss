@@ -54,24 +54,3 @@
     @include font(14px, 600, 17px, 0.03em, var(--text-color-button-frameless));
   }
 }
-
-// .contact__btn-list .contact__btn-item {
-//   &:nth-child(1) .contacts__button {
-//     padding: 12px 33px;
-//     border-radius: 10px;
-//     border: none;
-
-//     background-color: var(--button-color-main);
-
-//     @include font(16px, 600, 20px, 0.03em, var(--text-color-button));
-
-//     &:hover,
-//     &:focus {
-//       background-color: var(--button-color-accent);
-//     }
-//   }
-
-//   &:nth-child(2) .contacts__button {
-//     background-color: transparent;
-//   }
-// }
