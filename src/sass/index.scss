@@ -3,6 +3,11 @@
 @import './utils/vars';
 @import './utils/breakpoints';
 @import './utils/mixin';
+@import './utils/placeholder';
+
+@import './component/visually-hidden';
+@import './component/container';
+@import './component/button';
 
 @import './layout/header';
 @import './layout/hero';
