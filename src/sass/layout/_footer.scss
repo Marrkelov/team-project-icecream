@@ -1,0 +1,61 @@
+.footer__title {
+  @include font(18px, 700, 22px, 0.03em, var(--text-color-main));
+}
+
+.footer__subtitle {
+  @include font(34px, 700, 41px, 0.04em, var(--text-color-main));
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+.social__link {
+  display: flex;
+  background-color: var(--social-bg-color);
+  border-radius: 50%;
+}
+
+.social__icon {
+  width: 34px;
+  height: 34px;
+  fill: var(--social-color);
+  transition: fill var(--speed-animation) var(--animation-type),
+    width var(--speed-animation) var(--animation-type),
+    height var(--speed-animation) var(--animation-type);
+
+  &:hover {
+    fill: var(--social-color-accent);
+  }
+
+  &:focus {
+    fill: var(--social-color-accent);
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.contact-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+
+  @include font(12px, 700, 18px, 0.03em, var(--text-color-footer-contact));
+
+  &__tel {
+    color: var(--text-color-main);
+
+    transition: color var(--speed-animation) var(--animation-type);
+
+    &:focus,
+    &:hover {
+      color: var(--text-color-accent);
+    }
+  }
+}
+
+.reserved {
+  @include font(14px, 700, 15px, 0.03em, var(--text-color-secondary-footer));
+}
