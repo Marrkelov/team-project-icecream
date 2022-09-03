@@ -13,20 +13,34 @@
         margin-top: 0px;
     }
 }
-.advantage__icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--background-color-secondary);
+// .advantage__icon{
+    
+//     content: "";
+//     // background-image: url(../images/mobile/mobile-advantages/cow.png);
+//     // width: 50px;
+//     // height: 50px;
+//     border-radius: 50%;
+//     background-color: var(--background-color-secondary);
 
-    display: flex;
+//     display: flex;
+//     justify-content: center;
+//     align-items:center;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+  .advantage__title-block{
+    display:flex;
     justify-content: center;
-    align-items:center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 92px;
+     position: relative;
   }
 
   .advantage__title{
+
+    display:flex;
+    justify-content: center;
+
     max-width: 230px;
     text-align: center;
     margin-left: auto;
@@ -38,8 +52,26 @@
     text-align: center;
     // text-transform: uppercase;
 
-    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+
+    // position: relative;
+    &::before{
+      content:"";
+    background-image: url("../images/mobile/mobile-advantages/cow.png");
+    width: 50px;
+    height: 50px;
+    margin-bottom: 124px;
+
+    position: absolute;
+    
+
+
+
+    }
   }
+
+
 
   .advantage__description{
     max-width: 230px;
@@ -78,7 +110,10 @@
 
     .advantage__title{
       width:auto;
-      margin-top: 32px;
+      
+      &::before{
+        margin-bottom: 170px;
+      }
 
 
       @include font(48px, 700, 59px, 0.04em, #FFFFFF);
