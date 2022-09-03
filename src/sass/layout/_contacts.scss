@@ -1,5 +1,17 @@
 
+// .contacts{
+//     position: relative;
+//     min-height: 1075px;
+//     background-color: aquamarine;
+
+// }
+// .contacts__container{
+//     position: absolute;
+//         bottom: 0;
+//         left: 0;
+// }
 .contacts__list {
+   
     display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -86,6 +98,7 @@
 .contacts__button,
 .contacts__button--without-bg{
     display: block;
+    margin: 0 auto;
 }
 .contacts__button{
     margin-top: 32px;
