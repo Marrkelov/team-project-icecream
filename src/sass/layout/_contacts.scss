@@ -10,22 +10,22 @@
 //         bottom: 0;
 //         left: 0;
 // }
-.contacts__list {
+.contacts-cards {
    
-    display: flex;
+   display: flex;
    flex-wrap: wrap;
    justify-content: center;
    gap: 20px;
 }
 
-.contacts__item {
+.contacts-cards__item {
     padding:40px 32px;
     background-color:var(--background-color-address);
     max-width: 280px;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
-.contacts__item-title {
+.contacts-cards__title {
     display: inline-block;
     padding: 0 23px;
     margin-bottom: 20px;
@@ -37,7 +37,7 @@
     border-radius: 4px;
 }
 
-.contacts__list-address {
+.contacts-cards__list-address {
     position: relative;
     margin-bottom: 48px;
 
@@ -52,7 +52,7 @@
     }
 }
 
-.contacts__list-shedule {
+.contacts-cards__list-shedule {
     position: relative;
     margin-bottom: 48px;
 
@@ -67,40 +67,46 @@
     }
 }
 
-.contacts__item--orange {
+.contacts-cards__list-item--orange {
     margin-top: 8px;
 }
 
-.contacts__item--grey:not(:last-child) {
+.contacts-cards__list-item--grey:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.contacts__item--black {
+.contacts-cards__list-item--black {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-secondary));
     font-style: normal;
 }
 
-.contacts__link--orange {
+.contacts-cards__list-link--orange {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-address));
     font-style: normal;
 }
-.contacts__link--black{
+.contacts-cards__list-link--black{
     @include font(12px, 500, 22px, 0.04em, var(--text-color-secondary));
     font-style: normal;
 }
 
-.contacts__item--grey {
+.contacts-cards__list-item--grey {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-time));
     font-style: normal;
 }
 
-
-.contacts__button,
-.contacts__button--without-bg{
-    display: block;
-    margin: 0 auto;
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
 }
 .contacts__button{
-    margin-top: 32px;
-    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts__button-icon{
+    margin-left: 10px;
+   
 }
