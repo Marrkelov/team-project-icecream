@@ -1,9 +1,13 @@
+
+// ===================MOBILE=============
 .advantage{
     height: 614px;
 }
 
 .advantage__block{
     margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
 
     &_first{
         margin-top: 0px;
@@ -23,7 +27,7 @@
   }
 
   .advantage__title{
-    width: 230px;
+    max-width: 230px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -32,13 +36,13 @@
     font-family: 'Roboto';
     font-style: normal;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     margin-top: 16px;
   }
 
   .advantage__description{
-    width: 230px;
+    max-width: 230px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -52,3 +56,45 @@
 
     margin-top: 18px;
   }
+
+  // ==============TABLET==============
+
+  @media screen and (min-width: $tablet){
+    .advantage{
+      height: 510px;
+  }
+    .advantage__container{
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .advantage__block{
+      margin-top: 0;
+      width: 152px;
+      height: 253px;
+    }
+
+    .advantage__title{
+      width:auto;
+      margin-top: 32px;
+
+
+      @include font(48px, 700, 59px, 0.04em, #FFFFFF);
+      font-family: 'Montserrat';
+      
+    }
+    .advantage__description{
+      width: auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 174%;
+      
+      color: #FFFFFF;
+    
+      margin-top: 16px;
+    }
+  }
+  
+  
