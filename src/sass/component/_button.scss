@@ -8,7 +8,9 @@
 
   background-color: var(--button-color-main);
 
-  transition: background-color var(--speed-animation) var(--animation-type);
+  transition: background-color var(--speed-animation) var(--animation-type),
+    color var(--speed-animation) var(--animation-type),
+    fill var(--speed-animation) var(--animation-type);
 
   &:hover {
     background-color: var(--button-color-accent);
@@ -30,7 +32,9 @@
 
   background-color: transparent;
 
-  transition: border-color var(--speed-animation) var(--animation-type);
+  transition: border-color var(--speed-animation) var(--animation-type),
+    color var(--speed-animation) var(--animation-type),
+    fill var(--speed-animation) var(--animation-type);
 
   &:hover {
     border-color: var(--button-color-accent);
@@ -84,7 +88,9 @@
   @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
 
   transition: background-color var(--speed-animation) var(--animation-type),
-    border var(--speed-animation) var(--animation-type);
+    border var(--speed-animation) var(--animation-type),
+    color var(--speed-animation) var(--animation-type),
+    fill var(--speed-animation) var(--animation-type);
 
   &:hover {
     background-color: var(--button-color-accent);
