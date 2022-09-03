@@ -1,0 +1,61 @@
+.hero{
+    height: 502px;
+}
+
+.hero__title{
+    width: 247px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    @include font(26px, 400, 33px, 0.04em, var(--text-color-main));
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-main);
+
+    margin-top: 61px;
+}
+
+.hero__battons-flex{
+    display: flex;
+}
+.hero__button-product{
+    
+    width: 62px;
+    height: 24px;
+    
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    background-color: transparent;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hero__button-how{
+    width: 83px;
+    height: 24px;
+
+    margin-left: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #F8D24E;
+}
