@@ -4,7 +4,7 @@
   border-radius: 10px;
   border: none;
 
-  @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
+  @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
 
   background-color: var(--button-color-main);
 
@@ -34,7 +34,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
+    @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
   }
 }
 
