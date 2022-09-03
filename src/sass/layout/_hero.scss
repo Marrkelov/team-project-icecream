@@ -18,6 +18,8 @@
 }
 
 .hero__battons-flex{
+    margin-top: 32px;
+
     display: flex;
 }
 .hero__button-product{
@@ -31,15 +33,20 @@
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
+    @include font(8px, 600, 10px, 0, var(--text-color-secondary));
+   
     display: flex;
     align-items: center;
     justify-content:center;
     text-align: center;
+    &:hover{
+        border: 2px solid #0A8817;
+    }
+    &:focus{
+        border: 2px solid #0A8817;
+        color: var(--text-color-main);
+    }
 
-    color: #000000;
 }
 
 .hero__button-how{
@@ -49,13 +56,18 @@
     margin-left: 8px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
+    @include font(8px, 600, 10px, 0, var(--button-color-main));
+    
     display: flex;
     align-items: center;
+    justify-content:center;
     text-align: center;
     text-decoration-line: underline;
-
-    color: #F8D24E;
+    &:hover{
+        color:var(--button-color-accent);
+    }
+    &:focus{
+        color: var( --text-color-main);
+    }
 }
+   
