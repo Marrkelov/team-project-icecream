@@ -1,15 +1,21 @@
 .footer__title {
+  text-transform: uppercase;
   @include font(18px, 700, 22px, 0.03em, var(--text-color-main));
+  margin-bottom: 16px;
 }
 
 .footer__subtitle {
+  text-transform: uppercase;
   @include font(34px, 700, 41px, 0.04em, var(--text-color-main));
+  margin-bottom: 42px;
 }
 
 .social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   gap: 27px;
+  margin-bottom: 28px;
 }
 
 .social__link {
@@ -40,7 +46,9 @@
 .contact-footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   gap: 3px;
+  margin-bottom: 40px;
 
   @include font(12px, 700, 18px, 0.03em, var(--text-color-footer-contact));
 
@@ -57,5 +65,12 @@
 }
 
 .reserved {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
   @include font(14px, 700, 15px, 0.03em, var(--text-color-secondary-footer));
 }
