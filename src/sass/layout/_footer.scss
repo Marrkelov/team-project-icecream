@@ -2,12 +2,35 @@
   text-transform: uppercase;
   @include font(18px, 700, 22px, 0.03em, var(--text-color-main));
   margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    @include font(26px, 700, 32px, 0.04em, var(--text-color-main));
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(30px, 400, 37px, 0.04em, var(--text-color-main));
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__subtitle {
   text-transform: uppercase;
   @include font(34px, 700, 41px, 0.04em, var(--text-color-main));
   margin-bottom: 42px;
+
+  @media screen and (min-width: $tablet) {
+    @include font(48px, 700, 59px, 0.06em, var(--text-color-main));
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(58px, 700, 71px, 0.06em, var(--text-color-main));
+  }
 }
 
 .social {
@@ -52,6 +75,14 @@
 
   @include font(12px, 700, 18px, 0.03em, var(--text-color-footer-contact));
 
+  @media screen and (min-width: $tablet) {
+    @include font(14px, 700, 18px, 0.03em, var(--text-color-footer-contact));
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(16px, 700, 18px, 0.03em, var(--text-color-footer-contact));
+  }
+
   &__tel {
     color: var(--text-color-main);
 
@@ -64,6 +95,11 @@
   }
 }
 
+.footer__line {
+  border-top: 1px solid var(--border-line);
+  width: 100%;
+}
+
 .reserved {
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +107,18 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
   margin-bottom: 62px;
+
   @include font(14px, 700, 15px, 0.03em, var(--text-color-secondary-footer));
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    @include font(14px, 700, 18px, 0.02em, var(--text-color-secondary-footer));
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include font(12px, 700, 18px, 0.02em, var(--text-color-secondary-footer));
+  }
 }
