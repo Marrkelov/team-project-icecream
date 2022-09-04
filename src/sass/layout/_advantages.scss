@@ -124,7 +124,7 @@
     .advantage__block{
       margin-top: 0;
       width: 152px;
-      height: 253px;
+      // height: 253px;
     }
 
     .advantage__title{
@@ -151,4 +151,42 @@
     }
   }
   
+  // ============DESKTOP============
+  @media screen and (min-width: $desktop){
+    .advantage{
+      height: 467px;
+  }
+
+  .advantage__container{
+    gap: 32px;
+  }
+  .advantage__block{
+    margin-top: 0;
+    width: 368px;
+    // height: 253px;
+  }
+  .advantage__title{
+    width:auto;
+    
+    &::before{
+      margin-bottom: 195px;
+    }
+
+
+    @include font(58px, 700, 71px, 0.04em, #FFFFFF);
+    
+  }
+  .advantage__description{
+   
+    font-size: 16px;
+    line-height: 176%;
+    
+    color: #FFFFFF;
   
+    margin-top: 16px;
+  }
+
+  .advantage__description{
+    max-width: 100%;
+  }
+  }
