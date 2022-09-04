@@ -4,7 +4,9 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
+      
     },
+    
   
    
   });
