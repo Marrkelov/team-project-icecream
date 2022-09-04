@@ -259,7 +259,34 @@
         margin-left: 32px;
     }
     
-    .tablet_container{
+    .hero_container{
         position: relative;
+    }
+}
+
+// ===============DESKTOP================
+@media screen and (min-width: $desktop){
+    .hero{
+        height: 664px;
+        position: relative;
+        padding-top: 118px;
+    }
+    .hero__title{
+        font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+
+        width: 367px;
+    }
+    .hero__title-span{
+         font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+        
+        width: 367px;
     }
 }
