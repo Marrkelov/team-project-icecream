@@ -2,45 +2,54 @@
     <div class="container">
         <p class="about__overtitle">tradition and love</p>
         <h2 class="about__title">How it’s made?</h2>  
-        <div class="about__img-container">     
-        <picture>
-            <source 
-                srcset="./images/desktop/desktop-about/desktop-about-cow@1x-min.webp 1x, ./images/desktop/desktop-about/desktop-about-cow@2x-min.webp 2x"
-                media="(min-width: 1200px)" type="image/webp" />
-            <source
-                srcset="./images/desktop/desktop-about/desktop-about-cow@1x-min.jpg 1x, ./images/desktop/desktop-about/desktop-about-cow@2x-min.jpg 2x"
-                media="(min-width: 1200px)" />        
-            <source
-                srcset="./images/tablet/tablet-about/tablet-about-cow@1x.webp 1x, ./images/tablet/tablet-about/tablet-about-cow@2x.webp 2x"
-                media="(min-width: 768px)" type="image/webp" />
-            <source
-                srcset="./images/tablet/tablet-about/tablet-about-cow@1x.jpg 1x, ./images/tablet/tablet-about/tablet-about-cow@2x.jpg 2x"
-                media="(min-width: 768px)" />
-        
-            <source
-                srcset="./images/mobile/mobile-about/mobile-about-cow@1x.webp 1x, ./images/mobile/mobile-about/mobile-about-cow@2x.webp 2x"
-                media="(max-width: 767px)" type="image/webp" />
-            <source
-                srcset="./images/mobile/mobile-about/mobile-about-cow@1x.jpg 1x, ./images/mobile/mobile-about/mobile-about-cow@2x.jpg 2x"
-                media="(max-width: 767px)" />        
-            <img class="about__image" src="./images/desktop/desktop-about/desktop-about-cow@1x-min.jpg" alt="Cow eating grass">
-        </picture>   
+        <div class="about__wrapper">
+            <div class="about__img-wrapper">
+                <div class="about__img-container">     
+                    <picture>
+                        <source 
+                            srcset="./images/desktop/desktop-about/desktop-about-cow@1x-min.webp 1x, ./images/desktop/desktop-about/desktop-about-cow@2x-min.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp" />
+                        <source
+                            srcset="./images/desktop/desktop-about/desktop-about-cow@1x-min.jpg 1x, ./images/desktop/desktop-about/desktop-about-cow@2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />        
+                        <source
+                            srcset="./images/tablet/tablet-about/tablet-about-cow@1x.webp 1x, ./images/tablet/tablet-about/tablet-about-cow@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp" />
+                        <source
+                            srcset="./images/tablet/tablet-about/tablet-about-cow@1x.jpg 1x, ./images/tablet/tablet-about/tablet-about-cow@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+
+                        <source
+                            srcset="./images/mobile/mobile-about/mobile-about-cow@1x.webp 1x, ./images/mobile/mobile-about/mobile-about-cow@2x.webp 2x"
+                            media="(max-width: 767px)" type="image/webp" />
+                        <source
+                            srcset="./images/mobile/mobile-about/mobile-about-cow@1x.jpg 1x, ./images/mobile/mobile-about/mobile-about-cow@2x.jpg 2x"
+                            media="(max-width: 767px)" />        
+                        <img class="about__image" src="./images/desktop/desktop-about/desktop-about-cow@1x-min.jpg" alt="Cow eating grass">
+                    </picture>   
+                </div>
+            </div>
+            <div class="about__text-btn-wrapper">
+                <div class="about__text-wrapper">
+                    <p class="about__text">
+                        Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and
+                        we follow it when creating our handmade desserts.
+                    </p>
+                    <p class="about__text">
+                        We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children
+                        from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
+                    </p>
+                    <p class="about__text">
+                        This is enough to choose ice cream and coffee for any mood!
+                    </p>
+                </div>                
+                    <button class="about__button" type="button">
+                    Read more  
+                        <svg class="about__button-icon" width="12" height="18">
+                            <use href="./images/sprite.svg#arrow-button"></use>
+                        </svg>          
+                    </button>                
+            </div>
         </div>
-        <div class="about__text-wrapper">
-        <p class="about__text">
-            Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and
-            we follow it when creating our handmade desserts.
-        </p>
-        <p class="about__text">
-            We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children
-            from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
-        </p>
-        <p class="about__text">
-            This is enough to choose ice cream and coffee for any mood!
-        </p>
-        </div>
-        <button class="about__button" type="button">
-            Read more            
-        </button>
     </div>
 </section>
