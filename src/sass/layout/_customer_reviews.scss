@@ -1,0 +1,84 @@
+.customer-reviews{
+    position: relative;
+    background-color: #FCFCFC;
+    background-image: url(/src/images/mobile/mobile-gallery/mobile-backgroungimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 80px;
+    padding-bottom: 420px;
+}
+.thumb {
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.swiper {
+    max-width: 280px;
+    min-height: 250px;
+   
+}
+.swiper-wrapper{
+    min-width: 0;
+    min-height: 0;
+}
+.image-slider .swiper-pagination{
+    bottom: 0;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet{
+   width: 12px;
+   height: 12px;
+   line-height: 12px;
+   font-size: 14px;
+   background-color: #84A178;
+}
+.picture-wrapper{
+    
+    margin-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85px;
+    height: 85px;
+}
+.photo-customer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.customer-reviews__text{
+    padding: 34px 39px;
+    background-color: #84A178;
+    border-radius: 10px;
+    max-width: 202px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.customer-reviews__information{
+    margin-top: 30px;
+    margin-bottom: 31px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+    color: #000000;
+    
+}
