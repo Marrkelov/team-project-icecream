@@ -123,13 +123,13 @@
 
     text-align: center;
     }
-
-.product-cards__button {
-    display: block;
-    padding: 0;
+.product-cards__button{
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
 screen and (min-resolution: 192dpi) and (max-width: $to-tablet),
 screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
