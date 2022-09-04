@@ -1,6 +1,7 @@
 .hero{
     height: 502px;
     position: relative;
+    padding-top: 110px;
 }
 
 .hero__title{
@@ -15,7 +16,6 @@
     text-transform: uppercase;
     color: var(--text-color-main);
 
-    margin-top: 110px;
 }
 .hero__title-span{
     font-size: 34px;
@@ -76,17 +76,85 @@
     }
 }
 
+.many-ice-block{
+    margin-left: 185px;
+    margin-top: 56px;
+}
+.hero__many-ice-description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    
+    color: var(--text-color-main);
+    width: 151px;
+}
+.hero__battons-link{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    fill: var(--text-color-main);
+    margin-top: 10px;
+}
+.restaurants{
+    position: absolute;
+    top: -10px;
+    right: 32px;
+    
+    
+}
+.restaurants__number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(28px, 900, 34px, 0.04em, var(--text-color-secondary));
+
+    text-align: right;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+    
+    &_top{
+        margin-top: 0px; 
+    }
+}
+
+.restaurants_type{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: right;
+
+    color: var(--text-color-main);
+
+    margin-top: 4px;
+}
 // ===============MOBILE============
 .hero__image-container{
-    @media screen and (min-width: $mobile) {
-        width: 480px;
+    @media screen and (max-width: $to-tablet){
+        display: block;
         margin-left: auto;
         margin-right: auto;
-      }
+        width: 320px;
+    }
+    // @media screen and (min-width: $mobile) {
+    //     width: 480px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     display: block;
+    //   }
     
       @media screen and (min-width: $tablet) {
-        padding-left: 32px;
-        padding-right: 32px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 768px;
       }
     
@@ -117,7 +185,16 @@
     //     left: 0; right: 0; top: 0; bottom: 0;
     //     z-index: -1;
     // }
+    // background-image: url('../images/mobile/mobile-hero/Rectangle23v2.png');
+    
 }
+    .hero_ice-blur{
+        filter: blur(53.681px);
+        position: absolute;
+        bottom: 0;
+        margin-left: 82px;
+        z-index: 4;
+    }
 .hero__filter{
     position: absolute;
     bottom: 0;
@@ -129,7 +206,7 @@
 }
 
 .hero__buttons{
-    width: 329px;
+    // width: 329px;
     position: absolute;
     bottom: 0;
     
@@ -138,5 +215,78 @@
 @media screen and (max-width: $to-tablet) {
     .hero__many-ice-cream{
         display: none;
+    }
+    .hero__many-ice-description{
+        display: none;
+    }
+    .hero__battons-link{
+        display: none;
+    }
+    .restaurants{
+        display: none;
+    }
+}
+
+// ===============TABLET=============
+@media screen and (min-width: $tablet) {
+    .hero{
+        height: 415px;
+        position: relative;
+        padding-top: 104px;
+    }
+    .hero__title{
+        width: 181px;
+        font-size: 18px;
+        line-height: 23px;
+  }
+    .hero__title-span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .hero__battons-flex{
+        margin-top: 20px;
+    }
+    .hero__ice-cream{
+       
+        margin-left: 418px;
+    }
+    .hero_ice-blur{
+        margin-left: 418px;
+    }
+    .hero__many-ice-cream{
+        position: absolute;
+        bottom: 13px;
+        margin-left: 32px;
+    }
+    
+    .hero_container{
+        position: relative;
+    }
+}
+
+// ===============DESKTOP================
+@media screen and (min-width: $desktop){
+    .hero{
+        height: 664px;
+        position: relative;
+        padding-top: 118px;
+    }
+    .hero__title{
+        font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+
+        width: 367px;
+    }
+    .hero__title-span{
+         font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+        
+        width: 367px;
     }
 }
