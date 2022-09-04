@@ -72,10 +72,33 @@
 }
 
 .product-cards__button {
+  position: relative;
   display: flex;
+  align-items: center;
+  width: 40px;
+  height: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
+  overflow: hidden;
+
+  &:focus + .product-cards__icon {
+    width: 50px;
+  }
+
+  .product-cards__icon {
+    position: absolute;
+    left: -10px;
+    width: 40px;
+    height: 15px;
+
+    transition: width var(--speed-animation) var(--animation-type),
+      left var(--speed-animation) var(--animation-type);
+
+    &:hover {
+      left: 0;
+    }
+  }
 }
 
 .contacts__button {
