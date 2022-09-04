@@ -1,6 +1,6 @@
 .customer-reviews{
     position: relative;
-    margin-top: 106px;
+    
     background-color: var(--background-color-modal);
     background-image: url(/src/images/mobile/mobile-gallery/mobile-backgroundimg.png);
     background-repeat: no-repeat;
@@ -8,15 +8,15 @@
     background-position: center;
     background-size: cover;
     padding-top: 80px;
-    padding-bottom: 420px;
-    margin-top: 106px;
+    padding-bottom: 394px;
+    
 }
 .thumb {
     position: absolute;
-    top: -12%;
+    top: 0;
     left: 50%;
     min-width: 280px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     
@@ -133,7 +133,7 @@
     }
     .thumb{
         min-width: 704px;
-        top: -13.4%;
+        
     }
     .backgroundimg{
         
@@ -161,7 +161,7 @@
     }
     .thumb{
         min-width: 1013px;
-        top: -10.4%;
+        
         
     }
     .backgroundimg{
