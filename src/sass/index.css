@@ -200,18 +200,28 @@ textarea {
 .customer-reviews {
   position: relative;
   background-color: #FCFCFC;
-  background-image: url(/src/images/mobile/mobile-gallery/mobile-backgroungimg.png);
+  background-image: url(/src/images/mobile/mobile-gallery/mobile-backgroundimg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   padding-top: 80px;
   padding-bottom: 420px;
+  margin-top: 106px;
 }
 
 .thumb {
   position: absolute;
+  top: -13.4%;
+  left: 50%;
+  min-width: 280px;
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
+}
+
+.backgroundimg {
+  width: 100%;
+  border-radius: 7px;
 }
 
 .swiper {
@@ -252,13 +262,16 @@ textarea {
   border-radius: 50%;
 }
 
-.customer-reviews__text {
+.wrapper-text {
   padding: 34px 39px;
   background-color: #84A178;
   border-radius: 10px;
-  max-width: 202px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.customer-reviews__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -280,6 +293,53 @@ textarea {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    padding-top: 223px;
+    padding-bottom: 383px;
+    background-image: url(/src/images/tablet/tablet-gallery/tablet-backgroundimg.png);
+  }
+  .swiper {
+    max-width: 705px;
+  }
+  .wrapper-text {
+    padding: 29px 80px;
+    margin-top: 28px;
+    text-align: center;
+  }
+  .customer-reviews__text {
+    display: inline;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  .customer-reviews__information {
+    margin-top: 32px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding-top: 450px;
+    padding-bottom: 207px;
+    background-image: url(/src/images/desktop/desktop-gallery/desktop-backgroundimg.png);
+  }
+  .swiper {
+    max-width: 968px;
+  }
+  .wrapper-text {
+    padding: 39px 74px;
+    margin-top: 32px;
+  }
+  .customer-reviews__text {
+    font-size: 14px;
+  }
+}
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
