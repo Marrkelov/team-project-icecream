@@ -135,7 +135,7 @@
       }
 
 
-      @include font(48px, 700, 59px, 0.04em, #FFFFFF);
+      @include font(48px, 700, 59px, 0.04em,var(--text-color-main));
       font-family: 'Montserrat';
       
     }
@@ -145,7 +145,7 @@
       font-size: 14px;
       line-height: 174%;
       
-      color: #FFFFFF;
+      color:var(--text-color-main);
     
       margin-top: 16px;
     }
@@ -173,7 +173,7 @@
     }
 
 
-    @include font(58px, 700, 71px, 0.04em, #FFFFFF);
+    @include font(58px, 700, 71px, 0.04em,var(--text-color-main));
     
   }
   .advantage__description{
@@ -181,7 +181,7 @@
     font-size: 16px;
     line-height: 176%;
     
-    color: #FFFFFF;
+    color: var(--text-color-main);
   
     margin-top: 16px;
   }
