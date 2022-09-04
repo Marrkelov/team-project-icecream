@@ -37,6 +37,14 @@
     flex-direction: column;     
 }
 
+.about__button {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    min-width: 164px;
+}
+
 @media screen and (max-width: $to-desktop) {
     .about__text {
         @include font(12px, 400, 21px, 0.04em, var(--text-color-main));
@@ -79,8 +87,7 @@
         margin-bottom: 20px;
     }
 
-    .about__button {
-        display: block;
+    .about__button {        
         margin-left: auto;
         margin-right: auto;
     }
