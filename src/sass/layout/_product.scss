@@ -2,6 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-product1.jpg);
+    background-size: contain;
 }
 
 .products__overtitle {
@@ -35,95 +36,78 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 123px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     border-radius: 24px;
     display: flex;
     flex-direction: column;
 }
 
-.product-cards__item_first {
+.product-cards__item-first {
     background: var(--icecream-color);
     position: relative;
 }
 
-.product-cards__item_second {
+.product-cards__item-second {
     background: var(--icecoffee-color);
     position: relative;
 }
 
-.product-cards__item_third {
+.product-cards__item-third {
     background: var(--milkshakes-color);
     position: relative;
 }
 
-.product-cards__wrap_first {
+.product-cards__wrap-first,
+.product-cards__wrap-second,
+.product-cards__wrap-third {
     position: absolute;
-
+    
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     top: -100;
+    
+    &::before {
+        content: '';
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        display: block;
+        position: relative;
+        top: -11
+        }
+
+}
+
+.product-cards__wrap-first {
+    background: linear-gradient(0deg, var(--icecream-bg-img), var(--icecream-bg-img)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
     &::before {
         content: '';
         background-image: url(/src/images/mobile/mobile-products/mobile-products-ice-cream@1x.jpg);
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: block;
-        position: relative;
-        top: -11
     }
 }
 
-.product-cards__wrap_second {
-    position: absolute;
-
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    top: -100;
+.product-cards__wrap-second {
+    background: linear-gradient(0deg, var(--icecoffee-bg-img), var(--icecoffee-bg-img)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 
     &::before {
         content: '';
-        background-image: url(/src/images/mobile/mobile-products/mobile-products-ice-coffe@1x.jpg);
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: block;
-        position: relative;
-        top: -11
-    }
+        background-image: url(/src/images/mobile/mobile-products/mobile-products-ice-coffe@1x.jpg);}
 }
 
-.product-cards__wrap_third {
-    position: absolute;
-
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+.product-cards__wrap-third {
+    background: linear-gradient(0deg, var(--milkshakes-bg-img),var(--milkshakes-bg-img)), #D9D9D9;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    top: -100;
+
 
     &::before {
         content: '';
-        background-image: url(/src/images/mobile/mobile-products/mobile-products-milshakes@1x.jpg);
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        display: block;
-        position: relative;
-        top: -11
-    }
+        background-image: url(/src/images/mobile/mobile-products/mobile-products-milshakes@1x.jpg);}
 }
 
 .product-cards__title {
@@ -138,15 +122,208 @@
     @include font(14px, 400, 25px, 0.04em, var(--text-color-titles));
 
     text-align: center;
-    
-}
+    }
 
 .product-cards__button {
     display: block;
-    background: transparent;
-    border: none;
+    padding: 0;
     margin-top: auto;
     
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
+screen and (min-resolution: 192dpi) and (max-width: $to-tablet),
+screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
+    .products {
+        background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-product1@2x.jpg);}
+    .product-cards__wrap-first {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-cream@2x.jpg);}}
+    
+    .product-cards__wrap-second {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-coffe@2x.jpg);}}
+    
+    .product-cards__wrap-third {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-milshakes@2x.jpg);}}
+}
 
+
+@media screen and (min-width: $tablet) {
+    .products {
+        padding-bottom: 82px;
+        background-image: url(/src/images/background_img/background-tablet/bg-tab-icecream-product.jpg);
+        background-size: cover;    
+    }
+
+    .products__overtitle {
+        @include font(22px, 800, 27px, 0.04em, var(--text-color-titles));
+    }
+    .products__title{
+        @include font(34px, 400, 43px, 0.04em, var(--text-color-titles));
+        margin-bottom: 200px;}
+
+    .product-cards {
+        gap: 16px;
+    }
+
+    .product-cards__item {
+        width: 224px;
+        height: 428px;
+        padding-top: 108px;
+        padding-left: 26px;
+        padding-right: 26px;
+        flex-basis: calc((100% - 32px)/3);
+    }
+
+    .product-cards__wrap-first,
+    .product-cards__wrap-second,
+    .product-cards__wrap-third {
+        left:12px;
+    }
+
+    .product-cards__wrap-first {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-cream@1x.jpg);
+            }
+        }
+    
+    .product-cards__wrap-second {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-coffe@1x.jpg);
+            }
+        }
+    
+    .product-cards__wrap-third {
+        &::before {
+            content: '';
+             background-image: url(/src/images/tablet/tablet-products/tablet-products-milshakes@1x.jpg);
+            }}
+
+    .product-cards__title {
+        @include font(22px, 700, 27px, 0.04em, var(--text-color-titles));
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    screen and (min-resolution: 192dpi) and (min-width: $tablet),
+    screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    .products {
+        background-image: url(/src/images/background_img/background-tablet/bg-tab-icecream-product@2x.jpg);
+    }
+    .product-cards__wrap-first {
+        &::before {
+            content: '';
+            background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-cream@2x.jpg);}}
+    
+    .product-cards__wrap-second {
+        &::before {
+                content: '';
+                background-image: url(/src/images/tablet/tablet-products/tablet-products-ice-coffe@2x.jpg);}}
+    
+    .product-cards__wrap-third {
+        &::before {
+                content: '';
+                background-image: url(/src/images/tablet/tablet-products/tablet-products-milshakes@2x.jpg);}}
+}
+@media screen and (min-width: $desktop) {
+    .products {
+        padding-bottom: 60px;
+        background-image: url(/src/images/background_img/background-desktop/bg-desk-icecream-product.jpg);
+        
+        background-size: cover;
+    }
+    .products__overtitle{
+    @include font(30px, 800, 37px, 0.04em, var(--text-color-titles));
+    }
+
+    .products__title {
+        @include font(36px, 400, 45px, 0.06em, var(--text-color-titles));
+        margin-bottom: 303px;}
+    
+    .product-cards {
+        gap: 32px;}
+
+    .product-cards__item {
+        width: 370px;
+        height: 535px;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 166px;
+        padding-bottom: 50px;
+        flex-basis: calc((100% - 64px)/3);}
+
+    .product-cards__title {
+        @include font(30px, 700, 37px, 0.04em, var(--text-color-titles));
+        margin-bottom: 65px;}
+
+    .product-cards__text {
+        @include font(16px, 400, 28px, 0.04em, var(--text-color-titles));}
+
+    .product-cards__wrap-first, 
+    .product-cards__wrap-second, 
+    .product-cards__wrap-third {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 150%;
+        top: -160px;
+        left: 35px;
+        
+        &::before {
+            content: '';
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            display: block;
+            position: relative;
+            top: -16;}
+    }
+    .product-cards__wrap-first{
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desktop-products-ice-cream@1x.jpg);}
+    }
+    .product-cards__wrap-second {
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desktop-products-ice-coffe@1x.jpg);
+            }
+        }
+
+    .product-cards__wrap-third {
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desctop-products-milshakes@1x.jpg);
+    }
+}
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+screen and (min-resolution: 192dpi) and (min-width: $desktop),
+screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    .products {
+        background-image: url(/src/images/background_img/background-desktop/bg-desk-icecream-product@2x.jpg);}
+
+    .product-cards__wrap-first {
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desktop-products-ice-cream@2x.jpg);}
+        }
+    
+    .product-cards__wrap-second {
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desktop-products-ice-coffe@2x.jpg);}
+        }
+    
+    .product-cards__wrap-third {
+        &::before {
+            content: '';
+            background-image: url(/src/images/desktop/desctop-products/desctop-products-milshakes@2x.jpg);}
+}}
 
