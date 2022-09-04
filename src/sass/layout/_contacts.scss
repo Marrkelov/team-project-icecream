@@ -1,22 +1,43 @@
 
 .contacts{
-//     position: relative;
-//     min-height: 1075px;
-//     background-color: aquamarine;
-margin-bottom: 39px;
-
+    // position: relative;
+    // min-height: 1108px;
+    //    background-color: aquamarine;
+       margin-bottom: 39px;
+    // @media screen and (min-width:$tablet) {
+    // min-height: 348px;
+    // }
+   @media screen and (min-width:$desktop) {
+       margin-bottom: 120px;
+    //    min-height: 555px;
+   }
 }
 // .contacts__container{
 //     position: absolute;
-//         bottom: 0;
-//         left: 0;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+    
+//     @media screen and (max-width:$to-tablet) {
+//             min-height: 1472px;
+//         }
 // }
 .contacts-cards {
    
    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 20px;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px; 
+
+   @media screen and (min-width:$tablet) {
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media screen and (min-width:$desktop) {
+        gap: 32px;
+    }
 }
 
 .contacts-cards__item {
@@ -25,6 +46,17 @@ margin-bottom: 39px;
     max-width: 280px;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    @media screen and (min-width:$tablet) {
+      max-width: 224px;
+      padding-left: 24px;
+      padding-right: 27px;
+      }
+    @media screen and (min-width:$desktop) {
+        max-width: 368px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 .contacts-cards__title {
     display: inline-block;
@@ -33,9 +65,15 @@ margin-bottom: 39px;
 
     @include font(12px, 500, 22px, 0.04em, var(--text-color-main));
     text-transform: uppercase;
-
     background-color: var(--background-color-secondary);
     border-radius: 4px;
+
+    @media screen and (min-width:$tablet) {
+    @include font(16px, 500, 30px, 0.04em, var(--text-color-secondary));
+    padding: 0 14px;
+    margin-bottom: 32px;
+}
+
 }
 
 .contacts-cards__list-address {
@@ -50,6 +88,17 @@ margin-bottom: 39px;
         width: 100%;
         height: 0;
         border-bottom: 1px solid #E1E1E1;
+        @media screen and (min-width:$tablet) {
+            bottom: -25%;
+         }
+        @media screen and (min-width:$desktop) {
+            bottom: -29%;
+        }
+        }
+        
+
+    @media screen and (min-width:$tablet) {
+         margin-bottom: 58px;
     }
 }
 
@@ -66,41 +115,90 @@ margin-bottom: 39px;
         height: 0;
         border-bottom: 1px solid #E1E1E1;
     }
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 64px;
+        }
 }
 
 .contacts-cards__list-item--orange {
     margin-top: 8px;
+    @media screen and (min-width:$tablet) and (max-width:$to-desktop) {
+    margin-top: 12px;
+    }
 }
 
 .contacts-cards__list-item--grey:not(:last-child) {
     margin-bottom: 8px;
+    @media screen and (min-width:$tablet){
+        margin-bottom: 12px;
+    }
 }
 
 .contacts-cards__list-item--black {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-secondary));
     font-style: normal;
+    @media screen and (min-width:$tablet) {
+    @include font(14px, 500, 26px, 0.04em, var(--text-color-secondary));
+    }
+    @media screen and (min-width:$desktop) {
+    @include font(16px, 500, 26px, 0.04em, var(--text-color-secondary));
+    }
 }
 
 .contacts-cards__list-link--orange {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-address));
     font-style: normal;
+    &:hover,
+    &:focus{
+    text-decoration: underline;
+    }
+
+    @media screen and (min-width:$tablet) {
+    @include font(14px, 500, 26px, 0.04em, var(--text-color-address));
+    }
+    @media screen and (min-width:$desktop) {
+    @include font(16px, 500, 30px, 0.04em, var(--text-color-address));
+    }
 }
 .contacts-cards__list-link--black{
     @include font(12px, 500, 22px, 0.04em, var(--text-color-secondary));
     font-style: normal;
+
+    @media screen and (min-width:$tablet) {
+    @include font(14px, 500, 30px, 0.04em, var(--text-color-secondary));
+    }
+    @media screen and (min-width:$desktop) {
+    @include font(16px, 500, 30px, 0.04em, var(--text-color-secondary));
+    }
 }
 
 .contacts-cards__list-item--grey {
     @include font(12px, 500, 22px, 0.04em, var(--text-color-time));
     font-style: normal;
-}
 
+    @media screen and (min-width:$tablet) {
+    @include font(14px, 500, 26px, 0.04em, var(--text-color-time));
+    }
+    @media screen and (min-width:$desktop) {
+    @include font(16px, 500, 30px, 0.04em, var(--text-color-time));
+    }
+}
 .btn-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     margin-top: 32px;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 60px;
+     }
+     @media screen and (min-width:$desktop) {
+         margin-top: 64px;
+     }
 }
 .contacts__button{
     display: flex;
@@ -109,5 +207,5 @@ margin-bottom: 39px;
 }
 .contacts__button-icon{
     margin-left: 10px;
-   
 }
+
