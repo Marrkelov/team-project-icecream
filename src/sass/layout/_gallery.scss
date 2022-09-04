@@ -1,0 +1,68 @@
+.background_ice {
+  background-image: url(../images/background_img/icepattern.png);
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+// ===
+
+@media screen and (max-width: 1199px) {
+  .background_ice {
+    background-image: url(../images/background_img/icepattern.png);
+    background-color: white;
+  }
+}
+
+// ===
+
+@media screen and (min-devise-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .background_ice {
+    background-image: url(../images/background_img/icepattern.png);
+    background-color: white;
+  }
+}
+
+// ===
+
+@media screen and (min-width: 768px) {
+  .background_ice {
+    background-image: url(../images/background_img/icepattern.png);
+    background-color: white;
+  }
+}
+
+// ===
+
+@media screen and (min-width: 1200px) {
+  .background_ice {
+    background-image: url(../images/background_img/icepattern.png);
+    background-color: white;
+  }
+}
+
+// ===
+
+@media screen and (min-devise-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .background_ice {
+    background-image: url(../images/background_img/icepattern.png);
+    background-color: white;
+  }
+}
+
+// ===
+
+.gallery__pictures {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 98px;
+  margin-bottom: 696px;
+}
