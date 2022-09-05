@@ -1,0 +1,65 @@
+<section class="gallery">
+  <div class="container">
+    <h2 class="section__title visually-hidden">Gallery</h2>
+
+    <div class="container">
+      <ul class="gallery__pictures">
+        <li class="gallery__picture">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/desktop-gallery/desktop-gallery@1x.webp 1x,
+                ./images/desktop/desktop-gallery/desktop-gallery@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/desktop-gallery/desktop-gallery@1x.jpg 1x,
+                ./images/desktop/desktop-gallery/desktop-gallery@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/tablet/tablet-gallery/tablet-gallery@1x.webp 1x,
+                ./images/tablet/tablet-gallery/tablet-gallery@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/tablet/tablet-gallery/tablet-gallery@1x.jpg 1x,
+                ./images/tablet/tablet-gallery/tablet-gallery@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./images/mobile/mobile-gallery/mobile-gallery_1x.webp 1x,
+                ./images/mobile/mobile-gallery/mobile-gallery_2x.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/mobile/mobile-gallery/mobile-gallery@1x.jpg 1x,
+                ./images/mobile/mobile-gallery/mobile-gallery@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/mobile/mobile-gallery/mobile-gallery@1x.jpg"
+              alt="Ice"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
