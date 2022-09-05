@@ -1,11 +1,10 @@
-    .page-header__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $to-tablet) {
     .page-header {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -21,24 +20,23 @@
     }
 
     .menu__header {
-    display: none;
+        display: none;
     }
 
     .header__button {
-    display: none;
+        display: none;
     }
 
     .mobile-menu-open {
-    fill: var(--social-color-accent);
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
- }
+        fill: var(--social-color-accent);
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
+    }
 }
 
-
-// /======TABLET===========/  
-@media screen and (min-width: 767px) {
+// /======TABLET===========/
+@media screen and (min-width: $tablet) {
     .menu__header {
         display: none;
     }
@@ -53,31 +51,33 @@
         height: 44px;
     }
 
-    .header__button {
-        margin-left: 32px;
-    }
-
     .header__button-icon {
         margin-left: 10px;
     }
-    
+
     .mobile-menu-open {
-    fill: var(--social-color-accent);
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
+        fill: var(--social-color-accent);
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
     }
 }
 
-//  Desktop 
-
-@media screen and (min-width: 1200px) {
-     .page-header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 4;
+@media screen and (max-width: $to-desktop) {
+    .header__button {
+        margin-left: 32px;
+    }
 }
+
+//  Desktop
+
+@media screen and (min-width: $desktop) {
+    .page-header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 4;
+    }
 
     .menu__header {
         display: flex;
@@ -87,13 +87,11 @@
 
     .menu__link {
         @include font(16px, 700, 19.5px, 0.03em, var(--background-color-address));
-        white-space: nowrap;
         transition: color var(--speed-animation) var(--animation-type);
 
         &:hover,
         &:focus {
             color: var(--background-color-secondary);
-
         }
     }
 
@@ -102,11 +100,7 @@
         height: 65px;
     }
 
-    .header__button {
-        margin-left: unset;
-          }
-
-   .mobile-menu-open {
-    display: none;
-}
+    .mobile-menu-open {
+        display: none;
+    }
 }
