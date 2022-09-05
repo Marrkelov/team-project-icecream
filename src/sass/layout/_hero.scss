@@ -1,6 +1,11 @@
 .hero{
     height: 502px;
-    position: relative;
+    // position: relative;
+    padding-top: 110px;
+    background-image: url("../images/mobile/mobile-hero/mobile-hero-buttons@1x.png");
+    background-size: 320px , cover ;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .hero__title{
@@ -8,18 +13,14 @@
     font-family: 'Seymour One';
     font-style: normal;
     @include font(26px, 400, 33px, 0.04em, var(--text-color-main));
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.04em;
+   
     text-transform: uppercase;
     color: var(--text-color-main);
 
-    margin-top: 110px;
 }
 .hero__title-span{
     font-size: 34px;
-    line-height: 96.5%;
+    
 }
 
 .hero__battons-flex{
@@ -61,82 +62,368 @@
     margin-left: 8px;
     font-family: 'Montserrat';
     font-style: normal;
-    @include font(8px, 600, 10px, 0, var(--button-color-main));
+    @include font(8px, 600, 10px, 0.03em, var(--text-color-button-frameless));
     
     display: flex;
     align-items: center;
     justify-content:center;
     text-align: center;
-    text-decoration-line: underline;
-    &:hover{
-        color:var(--button-color-accent);
-    }
-    &:focus{
-        color: var( --text-color-main);
+    
+   
+}
+
+.many-ice-block{
+    margin-left: 185px;
+    margin-top: 56px;
+}
+.hero__many-ice-description{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    
+    color: var(--text-color-main);
+    width: 151px;
+}
+// .hero__battons-link{
+//     display: flex;
+//     align-items: center;
+//     justify-content:center;
+//     text-align: center;
+//     background-color: transparent;
+//     border: none;
+//     fill: var(--text-color-main);
+//     margin-top: 10px;
+// }
+.restaurants{
+    position: absolute;
+    top: -10px;
+    right: 32px;
+}
+.restaurants__number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(28px, 900, 34px, 0.04em, var(--text-color-secondary));
+
+    text-align: right;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+    
+    &_top{
+        margin-top: 0px; 
     }
 }
 
+.restaurants_type{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: right;
+
+    color: var(--text-color-main);
+
+    margin-top: 4px;
+}
+
+.hero__icon--fill-arrow{
+    fill: var(--text-color-main);
+}
 // ===============MOBILE============
-.hero__image-container{
-    @media screen and (min-width: $mobile) {
-        width: 480px;
+.hero-container{
+    position: relative;
+    @media screen and (max-width: $to-tablet){
+        display: block;
         margin-left: auto;
         margin-right: auto;
-      }
+        width: 320px;
+        height: 392px;
+        
+    }
+   
     
       @media screen and (min-width: $tablet) {
-        padding-left: 32px;
-        padding-right: 32px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 768px;
+        height: 311px;
       }
     
       @media screen and (min-width: $desktop) {
-        padding-left: 16px;
-        padding-right: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 1200px;
+        height: 546px;
       }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/mobile/mobile-hero/mobile-hero-buttons@2x.png");
+  }
 }
 .hero__ice-cream{
     position: absolute;
     bottom: 0;
-    margin-left: 82px;
+    left: 82px;
     z-index: 5;
-    // background-image: url('../images/mobile/mobile-hero/rectangle23.png');
-    // background: rgba(252, 252, 252, 0.44);
-    // filter: blur(53.681px);
-    // box-shadow: 0 0 53.681px ;
-    
-    // &::before{
-    //     display: block;
-    //     content: '';
-    //     background: url('../images/mobile/mobile-hero/rectangle23.png') no-repeat;
-    //     background-size: cover;
-        
-    //     filter: blur(53.681px);
-    //     position: absolute;
-    //     left: 0; right: 0; top: 0; bottom: 0;
-    //     z-index: -1;
-    // }
+   
 }
-.hero__filter{
-    position: absolute;
-    bottom: 0;
-    margin-left: 82px;
-    z-index: 4;
-    background: rgba(252, 252, 252, 0.44);
-    filter: blur(53.681px);
-  
-}
+    .hero_ice-blur{
+        filter: blur(53.681px);
+        position: absolute;
+        bottom: 0;
+        left: 82px;
+        z-index: -1;
 
-.hero__buttons{
-    width: 329px;
-    position: absolute;
-    bottom: 0;
+        // підсвідка
+        animation: pulse 3s linear infinite;
+    }
+// підсвідка
+    @-webkit-keyframes "pulse" {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        50% {
+           -webkit-transform: scale(1.6);
+           transform: scale(1.6);
+        }
+        100% {
+            -webkit-transform: scale(1);
+           transform: scale(1);
+        }
+        }
+
+
+        
+    .hero__filter{
+        position: absolute;
+        bottom: 0;
+        margin-left: 82px;
+        z-index: 4;
+        background: rgba(252, 252, 252, 0.44);
+        filter: blur(53.681px);
     
-}
+    }
+
+    .hero__buttons{
+        // width: 329px;
+        position: absolute;
+        bottom: 0;
+        
+    }
 
 @media screen and (max-width: $to-tablet) {
     .hero__many-ice-cream{
         display: none;
     }
+    .hero__many-ice-description{
+        display: none;
+    }
+    .hero__battons-link{
+        display: none;
+    }
+    .restaurants{
+        display: none;
+    }
+}
+
+// ===============TABLET=============
+@media screen and (min-width: $tablet) {
+    
+    .hero{
+        height: 415px;
+        // position: relative;
+        padding-top: 104px;
+        background-image: url("../images/tablet/tablet-hero/tablet-hero-buttons@1x.png");
+        background-size: 768px , cover ;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    
+    @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/tablet/tablet-hero/tablet-hero-buttons@2x.png");
+  }
+}
+    
+    .hero__title{
+        width: 181px;
+        font-size: 18px;
+        line-height: 23px;
+  }
+    .hero__title-span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .hero__battons-flex{
+        margin-top: 20px;
+    }
+    .hero__ice-cream{
+       
+        left: 418px;
+    }
+    .hero_ice-blur{
+        left: 418px;
+    }
+    .hero__many-ice-cream{
+        position: absolute;
+        bottom: 13px;
+        left: 32px;
+    }
+    
+    .hero-container{
+        position: relative;
+    }
+}
+
+// ===============DESKTOP================
+@media screen and (min-width: $desktop){
+  
+    .hero{
+        height: 664px;
+        // position: relative;
+        padding-top: 118px;
+        background-image: url("../images/desktop/desktop-hero/desktop-hero-buttons@1x.png");
+        background-size: 1200px , cover ;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    
+    @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+        background-image: url("../images/desktop/desktop-hero/desktop-hero-buttons@2x.png");
+  }
+}
+    .hero__title{
+        font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+
+        width: 367px;
+    }
+    .hero__title-span{
+         font-family: 'Seymour One';
+        font-style: normal;
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      
+        text-transform: uppercase;
+        
+        width: 367px;
+    }
+    .hero__battons-flex{
+        margin-top: 28px;
+    }
+    .hero__button-product{
+    
+        width: 134px;
+        height: 42px;
+        
+        border: 2px solid #F8D24E;
+        border-radius: 8px;
+        background-color: transparent;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        @include font(14px, 600, 18px, 0.03, var(--text-color-secondary));
+        
+
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        &:hover{
+            border: 2px solid #0A8817;
+        }
+        &:focus{
+            border: 2px solid #0A8817;
+            color: var(--text-color-main);
+        }
+    }
+    .hero__button-how{
+        width: 154px;
+        height: 40px;
+    
+        margin-left: 12px;
+      
+        @include font(14px, 600, 17px, 0, var(--button-color-main));
+    }
+    .hero__ice-cream{
+       
+        left: 651px;
+    }
+    .hero_ice-blur{
+       left: 651px;
+    }
+    .hero__many-ice-cream{
+        position: absolute;
+        bottom: 65px;
+        left: 17px;
+    }
+
+    .hero__many-ice-description{
+       
+        font-size: 14px;
+        width: 200px;
+    }
+    .many-ice-block{
+    margin-left: 240px;
+    margin-top: 111px;
+    }
+    .restaurants__number{
+    
+        @include font(46px, 900, 56px, 0.04em, var(--text-color-secondary));
+    
+        text-align: right;
+        text-transform: uppercase;
+
+        margin-top: 16px;
+        
+        &_top{
+            margin-top: 0px; 
+        }
+    }
+    .restaurants_type{
+        
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        text-align: right;
+
+        color: var(--text-color-main);
+
+        margin-top: 4px;
+    }
+    .restaurants{
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+    .hero__many-ice-cream{
+        position: absolute;
+        bottom: 65px;
+        margin-left: 0px;
+    }
+    // .hero__many-ice-cream{
+    //     position: absolute;
+    //     bottom: 65px;
+    //     margin-left: 0px;
+    // }
 }
