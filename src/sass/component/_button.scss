@@ -71,7 +71,8 @@
   }
 }
 
-.product-cards__button {
+.product-cards__button,
+.hero__button--arrow {
   position: relative;
   display: flex;
   align-items: center;
@@ -82,11 +83,19 @@
   background-color: transparent;
   overflow: hidden;
 
-  &:focus + .product-cards__icon {
+  transition: width var(--speed-animation) var(--animation-type);
+
+  &:focus {
     width: 50px;
   }
 
-  .product-cards__icon {
+  &:focus .product-cards__icon {
+    left: 0;
+    width: 50px;
+  }
+
+  .product-cards__icon,
+  .hero__icon--arrow {
     position: absolute;
     left: -10px;
     width: 40px;
