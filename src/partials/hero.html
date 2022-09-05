@@ -1,17 +1,17 @@
 <section class="hero">
-    <div class="container hero_container">
+    <div class="container hero-container">
         <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
     
         <div class="hero__battons-flex">
-            <button class="hero__button-product" type="button">Products</button>
-            <a href="#" class="hero__button-how" >How it’s made?</a>
+            <button class="hero__button" type="button">Products</button>
+            <a href="#" class="hero__button-how hero__button--frameless" >How it’s made?</a>
         </div>
 
         <div class="many-ice-block">
             <p class="hero__many-ice-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
     
-                <button class="hero__battons-link" type="button">
-                    <svg class="" width="40" height="15">
+                <button class="arrow-button hero__button--arrow " type="button">
+                    <svg class="hero__icon--arrow hero__icon--fill-arrow">
                         <use href="./images/sprite.svg#arrow">
                         </use>
                     </svg>
@@ -23,15 +23,10 @@
             <p class="restaurants__number">23</p>
             <p class="restaurants_type">food trucks</p>
         </div>
-    </div>
+    
 
-    <div class="hero__image-container">
-        <!-- <div class="restaurants">
-            <p class="restaurants__number restaurants__number_top">16</p>
-            <p class="restaurants_type">cafes</p>
-            <p class="restaurants__number">23</p>
-            <p class="restaurants_type">food trucks</p>
-        </div> -->
+    
+      
     
         <picture>
             
@@ -48,19 +43,7 @@
             <img class="hero__ice-cream" src="./images/mobile/mobile-hero/mobile-hero-ice-cream@1x.png" alt="Happy ice-cream">
         </picture>   
         
-        <picture>
-            <source 
-                srcset="./images/desktop/desktop-hero/desktop-hero-buttons@1x.png 1x, ./images/desktop/desktop-hero/desktop-hero-buttons@2x.png 2x"
-                media="(min-width: 1200px)" />
-            <source
-                srcset="./images/tablet/tablet-hero/tablet-hero-buttons@1x.png 1x, ./images/tablet/tablet-hero/tablet-hero-buttons@2x.png 2x"
-                media="(min-width: 768px)" />        
-            <source
-                srcset="./images/mobile/mobile-hero/mobile-hero-buttons@1x.png 1x, ./images/mobile/mobile-hero/mobile-hero-buttons@2x.png 2x"
-                media="(max-width: 767px)"  />
-                
-            <img class="hero__buttons" src="./images/desktop/desktop-hero/desktop-hero-buttons@1x.png" alt="Buttons at ice-cream">
-        </picture>  
+      
     
         <picture>
             <source 
@@ -70,7 +53,7 @@
                 srcset="./images/tablet/tablet-hero/tablet-hero-many-ice@1x.png 1x, ./images/tablet/tablet-hero/tablet-hero-many-ice@2x.png 2x"
                 media="(min-width: 768px)" />        
            
-            <img class="hero__many-ice-cream" src="./images/tablet/tablet-hero/tablet-hero-many-ice@1x.png" alt="a plate with ice cream">
+            <img class="hero__many-ice-cream" src="./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png" alt="a plate with ice cream">
         </picture>  
         <picture>
             <source 
@@ -80,20 +63,12 @@
                 srcset="./images/tablet/tablet-hero/tablet-hero-blur.png"
                 media="(min-width: 768px)" />   
             <source 
-                srcset="./images/mobile/mobile-hero/mobile-hero-blur.png""
+                srcset="./images/mobile/mobile-hero/mobile-hero-blur.png"
                 media="(max-width: 767px)" /> 
 
-            <img class="hero_ice-blur" src="./images/mobile/mobile-hero/mobile-hero-blur.png" alt="">
+            <img class="hero_ice-blur" src="./images/mobile/mobile-hero/mobile-hero-blur.png" alt="cooling effect for ice cream">
         </picture>
 
 
-        <!-- <picture>
-            <source 
-                srcset="./images/mobile/mobile-hero/Rectangle23.png"
-                media="(max-width: 767px)" />
-            
-                
-            <img class="hero__filter" src="./images/mobile/mobile-hero/Rectangle23.png" alt="Happy ice-cream">
-        </picture>    -->
     </div>
 </section>
