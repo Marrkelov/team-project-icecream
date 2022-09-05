@@ -1,147 +1,141 @@
-.customer-reviews{
-    background-color: var(--background-color-modal);
-    background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-review4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 394px;
+.customer-reviews {
+  background-color: var(--background-color-modal);
+  background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-review4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 181px;
+  padding-bottom: 394px;
 }
-
 
 .swiper {
-    max-width: 280px;
-    min-height: 250px;
+  max-width: 280px;
+  min-height: 250px;
 }
 
-.swiper-wrapper{
-    min-width: 0;
-    min-height: 0;
+.swiper-wrapper {
+  min-width: 0;
+  min-height: 0;
 }
 
-.image-slider .swiper-pagination{
-    bottom: 0;
+.image-slider .swiper-pagination {
+  bottom: 0;
 }
 
-
-.swiper-pagination .swiper-pagination-bullet{
-   width: 12px;
-   height: 12px;
-   line-height: 12px;
-   font-size: 14px;
-   background-color: var(--background-color-main);
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 14px;
+  background-color: var(--background-color-main);
 }
 
-.picture-wrapper{
-    
-    margin-bottom: 32px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 85px;
-    height: 85px;
+.picture-wrapper {
+  margin-bottom: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 85px;
+  height: 85px;
 }
 
-.photo-customer{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-radius: 50%;
+.photo-customer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 50%;
 }
 
-.wrapper-text{
-    padding: 34px 39px;
-    background-color: var(--background-color-main);
-    border-radius: 10px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+.wrapper-text {
+  padding: 34px 39px;
+  background-color: var(--background-color-main);
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
-.customer-reviews__text{
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.58;
-    text-align: center;
-    color: #FCFCFC;
+.customer-reviews__text {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #fcfcfc;
 }
 
-.customer-reviews__information{
-    font-family: var(--secondary-font);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.86;
-    text-align: center;
-    color: var(--text-color-secondary);
-    margin-bottom: 32px;
+.customer-reviews__information {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--text-color-secondary);
+  margin-bottom: 32px;
 }
-
 
 @media screen and (min-width: $tablet) {
-    .customer-reviews {
-        padding-top: 223px;
-        padding-bottom: 383px;
-        background-image: url(/src/images/background_img/background-tablet/bg-tab-icecream-review.jpg);
-        background-size: cover;
-    } 
+  .customer-reviews {
+    padding-top: 218px;
+    padding-bottom: 383px;
+    background-image: url(/src/images/background_img/background-tablet/bg-tab-icecream-review.jpg);
+    background-size: cover;
+  }
 
-    .swiper{
-        max-width: 705px;
-        min-height: 355px;
-    }
-    .picture-wrapper{
-        margin-bottom: 28px;
-    }
+  .swiper {
+    max-width: 705px;
+    min-height: 355px;
+  }
+  .picture-wrapper {
+    margin-bottom: 28px;
+  }
 
-    .wrapper-text{
-        padding: 29px 80px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
+  .wrapper-text {
+    padding: 29px 80px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
 
-    .customer-reviews__text{
-       display: inline;
-       font-family: var(--primary-font);
-       font-weight: 500;
-       font-size: 14px;
-       line-height: 1.86;
-       letter-spacing: 0.04em;
-    }
+  .customer-reviews__text {
+    display: inline;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
 
-    .customer-reviews__information{
-        font-family: var(--primary-font);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.86;
-    }
-    
+  .customer-reviews__information {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
-@media screen and (min-width: $desktop){
-    .customer-reviews{
-        padding-top: 450px; 
-        padding-bottom: 207px;
-        background-image: url(/src/images/background_img/background-desktop/bg-desk-icecream-review.jpg);
-        background-size: cover;
-    }
-    .swiper{
-        max-width: 968px;
-        min-height: 361px;
-    }
+@media screen and (min-width: $desktop) {
+  .customer-reviews {
+    padding-top: 451px;
+    padding-bottom: 207px;
+    background-image: url(/src/images/background_img/background-desktop/bg-desk-icecream-review.jpg);
+    background-size: cover;
+  }
+  .swiper {
+    max-width: 968px;
+    min-height: 361px;
+  }
 
-    .picture-wrapper{
-        margin-bottom: 32px;
-    }
+  .picture-wrapper {
+    margin-bottom: 32px;
+  }
 
-    .wrapper-text{
-        padding: 39px 74px;
-        margin-bottom: 32px;
-    }
+  .wrapper-text {
+    padding: 39px 74px;
+    margin-bottom: 32px;
+  }
 
-    .customer-reviews__text{
-        font-size: 14px;
-    }
-  
+  .customer-reviews__text {
+    font-size: 14px;
+  }
 }
