@@ -186,24 +186,45 @@
         position: absolute;
         bottom: 0;
         margin-left: 82px;
-        z-index: 4;
-    }
-.hero__filter{
-    position: absolute;
-    bottom: 0;
-    margin-left: 82px;
-    z-index: 4;
-    background: rgba(252, 252, 252, 0.44);
-    filter: blur(53.681px);
-  
-}
+        z-index: -1;
 
-.hero__buttons{
-    // width: 329px;
-    position: absolute;
-    bottom: 0;
+        // підсвідка
+        animation: pulse 3s linear infinite;
+    }
+// підсвідка
+    @keyframes "pulse" {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        50% {
+           -webkit-transform: scale(1.5 , 1);
+           transform: scale(1.5 , 1);
+        }
+        100% {
+            -webkit-transform: scale(1);
+           transform: scale(1);
+        }
+        }
+
+
+        
+    .hero__filter{
+        position: absolute;
+        bottom: 0;
+        margin-left: 82px;
+        z-index: 4;
+        background: rgba(252, 252, 252, 0.44);
+        filter: blur(53.681px);
     
-}
+    }
+
+    .hero__buttons{
+        // width: 329px;
+        position: absolute;
+        bottom: 0;
+        
+    }
 
 @media screen and (max-width: $to-tablet) {
     .hero__many-ice-cream{
@@ -266,7 +287,7 @@
         margin-left: 32px;
     }
     
-    .hero_container{
+    .hero-container{
         position: relative;
     }
 }
