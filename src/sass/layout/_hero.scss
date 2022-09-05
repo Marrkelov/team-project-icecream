@@ -13,17 +13,14 @@
     font-family: 'Seymour One';
     font-style: normal;
     @include font(26px, 400, 33px, 0.04em, var(--text-color-main));
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 33px;
-    letter-spacing: 0.04em;
+   
     text-transform: uppercase;
     color: var(--text-color-main);
 
 }
 .hero__title-span{
     font-size: 34px;
-    line-height: 96.5%;
+    
 }
 
 .hero__battons-flex{
@@ -65,19 +62,14 @@
     margin-left: 8px;
     font-family: 'Montserrat';
     font-style: normal;
-    @include font(8px, 600, 10px, 0, var(--button-color-main));
+    @include font(8px, 600, 10px, 0.03em, var(--text-color-button-frameless));
     
     display: flex;
     align-items: center;
     justify-content:center;
     text-align: center;
-    text-decoration-line: underline;
-    &:hover{
-        color:var(--button-color-accent);
-    }
-    &:focus{
-        color: var( --text-color-main);
-    }
+    
+   
 }
 
 .many-ice-block{
@@ -94,16 +86,16 @@
     color: var(--text-color-main);
     width: 151px;
 }
-.hero__battons-link{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    fill: var(--text-color-main);
-    margin-top: 10px;
-}
+// .hero__battons-link{
+//     display: flex;
+//     align-items: center;
+//     justify-content:center;
+//     text-align: center;
+//     background-color: transparent;
+//     border: none;
+//     fill: var(--text-color-main);
+//     margin-top: 10px;
+// }
 .restaurants{
     position: absolute;
     top: -10px;
@@ -137,6 +129,10 @@
     color: var(--text-color-main);
 
     margin-top: 4px;
+}
+
+.hero__icon--fill-arrow{
+    fill: var(--text-color-main);
 }
 // ===============MOBILE============
 .hero__image-container{
@@ -348,7 +344,7 @@
     
         font-family: 'Montserrat';
         font-style: normal;
-        @include font(14px, 600, 18px, 0, var(--text-color-secondary));
+        @include font(14px, 600, 18px, 0.03, var(--text-color-secondary));
         
 
         display: flex;
