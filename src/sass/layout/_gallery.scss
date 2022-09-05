@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-product1.jpg);
+}
+
+.gallery_picture {
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
