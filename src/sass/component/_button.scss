@@ -71,11 +71,43 @@
   }
 }
 
-.product-cards__button {
+.product-cards__button,
+.hero__button--arrow {
+  position: relative;
   display: flex;
+  align-items: center;
+  width: 40px;
+  height: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
+  overflow: hidden;
+
+  transition: width var(--speed-animation) var(--animation-type);
+
+  &:focus {
+    width: 50px;
+  }
+
+  &:focus .product-cards__icon {
+    left: 0;
+    width: 50px;
+  }
+
+  .product-cards__icon,
+  .hero__icon--arrow {
+    position: absolute;
+    left: -10px;
+    width: 40px;
+    height: 15px;
+
+    transition: width var(--speed-animation) var(--animation-type),
+      left var(--speed-animation) var(--animation-type);
+
+    &:hover {
+      left: 0;
+    }
+  }
 }
 
 .contacts__button {

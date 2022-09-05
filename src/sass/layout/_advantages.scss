@@ -1,54 +1,195 @@
+
+// ===================MOBILE=============
 .advantage{
-    height: 614px;
+  height: 614px;
 }
 
 .advantage__block{
-    margin-top: 28px;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
 
-    &_first{
-        margin-top: 0px;
-    }
+  &_first{
+      margin-top: 0px;
+  }
 }
-.advantage__icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--background-color-secondary);
+// .advantage__icon{
+  
+//     content: "";
+//     // background-image: url(../images/mobile/mobile-advantages/cow.png);
+//     // width: 50px;
+//     // height: 50px;
+//     border-radius: 50%;
+//     background-color: var(--background-color-secondary);
 
+//     display: flex;
+//     justify-content: center;
+//     align-items:center;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+.advantage__title-block{
+  display:flex;
+  justify-content: center;
+  //  position: relative;
+}
+
+.advantage__title{
+
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 230px;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(36px, 700, 42px, 0.04em, var(--text-color-main));
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: center;
+  // text-transform: uppercase;
+
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.advantage__title_cow::before{
+  display: block;
+  content:"";
+background-image: url("../images/mobile/mobile-advantages/cow.png");
+width: 50px;
+height: 50px;
+margin-bottom: 16px;
+
+// position: absolute;
+
+}
+
+.advantage__title_weight::before{
+  display: block;
+  content:"";
+background-image: url("../images/mobile/mobile-advantages/weight.png");
+width: 50px;
+height: 50px;
+margin-bottom: 16px;
+
+// position: absolute;
+
+}
+
+.advantage__title_ice::before{
+  display: block;
+  content:"";
+background-image: url("../images/mobile/mobile-advantages/ice.png");
+width: 50px;
+height: 50px;
+margin-bottom: 16px;
+
+// position: absolute;
+
+}
+
+
+
+.advantage__description{
+  max-width: 230px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(12px, 700, 20px, 0.02em, var(--text-color-main));
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+ 
+  text-align: center;
+
+  margin-top: 18px;
+}
+
+// ==============TABLET==============
+
+@media screen and (min-width: $tablet){
+  .advantage{
+    height: 510px;
+}
+  .advantage__container{
     display: flex;
+    gap: 80px;
     justify-content: center;
-    align-items:center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+  }
+
+  .advantage__block{
+    margin-top: 0;
+    width: 152px;
+    // height: 253px;
   }
 
   .advantage__title{
-    width: 230px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width:auto;
+    
+    &::before{
+      margin-bottom: 32px;
+    }
 
-    @include font(36px, 700, 42px, 0.04em, var(--text-color-main));
-    font-family: 'Roboto';
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
 
+    @include font(48px, 700, 59px, 0.04em,var(--text-color-main));
+    font-family: 'Montserrat';
+    
+  }
+  .advantage__description{
+    width: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+    
+    color:var(--text-color-main);
+  
     margin-top: 16px;
   }
+}
 
-  .advantage__description{
-    width: 230px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+// ============DESKTOP============
+@media screen and (min-width: $desktop){
+  .advantage{
+    height: 467px;
+}
 
-    @include font(12px, 700, 20px, 0.02em, var(--text-color-main));
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-   
-    text-align: center;
-
-    margin-top: 18px;
+.advantage__container{
+  gap: 32px;
+}
+.advantage__block{
+  margin-top: 0;
+  width: 368px;
+  // height: 253px;
+}
+.advantage__title{
+  width:auto;
+  
+  &::before{
+    margin-bottom: 40px;
   }
+
+
+  @include font(58px, 700, 71px, 0.04em,var(--text-color-main));
+  
+}
+.advantage__description{
+ 
+  font-size: 16px;
+  line-height: 176%;
+  
+  color: var(--text-color-main);
+
+  margin-top: 16px;
+}
+
+.advantage__description{
+  max-width: 100%;
+}
+}
