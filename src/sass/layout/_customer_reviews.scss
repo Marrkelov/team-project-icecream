@@ -1,6 +1,6 @@
 .customer-reviews{
     background-color: var(--background-color-modal);
-    background-image: url(/src/images/mobile/mobile-customer-reviews/mobile-backgroundimg.png);
+    background-image: url(/src/images/background_img/background-mobile/bg-mob-icecream-review4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -75,7 +75,7 @@
     line-height: 1.86;
     text-align: center;
     color: var(--text-color-secondary);
-    
+    margin-bottom: 32px;
 }
 
 
@@ -83,7 +83,7 @@
     .customer-reviews {
         padding-top: 223px;
         padding-bottom: 383px;
-        background-image: url(/src/images/tablet/tablet-customer-reviews/tablet-backgroundimg.png);
+        background-image: url(/src/images/background_img/background-tablet/bg-tab-icecream-review.jpg);
         background-size: cover;
     } 
 
@@ -123,7 +123,7 @@
     .customer-reviews{
         padding-top: 450px; 
         padding-bottom: 207px;
-        background-image: url(/src/images/desktop/desktop-customer-reviews/desktop-backgroundimg.png);
+        background-image: url(/src/images/background_img/background-desktop/bg-desk-icecream-review.jpg);
         background-size: cover;
     }
     .swiper{
