@@ -1,27 +1,26 @@
 
 .contacts{
-    // position: relative;
-    // min-height: 1108px;
-    //    background-color: aquamarine;
-       margin-bottom: 39px;
-    // @media screen and (min-width:$tablet) {
-    // min-height: 348px;
-    // }
+    position: relative;
+    min-height: 1108px;
+    margin-bottom: 39px;
+    @media screen and (min-width:$tablet) {
+    min-height: 348px;
+    }
    @media screen and (min-width:$desktop) {
        margin-bottom: 120px;
-    //    min-height: 555px;
+       min-height: 555px;
    }
 }
-// .contacts__container{
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
+.contacts__container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     
-//     @media screen and (max-width:$to-tablet) {
-//             min-height: 1472px;
-//         }
-// }
+    @media screen and (max-width:$to-tablet) {
+            min-height: 1472px;
+        }
+}
 .contacts-cards {
    
    display: flex;
