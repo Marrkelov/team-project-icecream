@@ -1,0 +1,90 @@
+.container-gallery{
+    position: relative;
+}
+
+.gallery_animated-block{
+    position: absolute;
+    width: 280px;
+    // height: 130px;
+    top: -24px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.gallery__firts-image{
+    width: 100%;
+    background: #808080;
+    border-radius: 7.40681px;
+}
+.gallery__second-image{
+    width: 280px;
+    height: 130px;
+    background: #808080;
+    border-radius: 7.40681px;
+}
+
+
+// ==========TABLET=============
+@media screen and (min-width: $tablet){
+    .gallery_animated-block{
+        width: 704px;
+        top: -58px;
+    }
+    .gallery__firts-image{
+        border-radius: 18px;
+        width: 704px;
+        height: 327px;
+    }
+    .gallery__second-image{
+        width: 704px;
+        height: 327px;
+        border-radius: 18px;
+    }
+    }
+
+// ==========DESKTOP=============
+@media screen and (min-width: $desktop){
+    .gallery_animated-block{
+        width: 1013px;
+        top: -94px;
+    }
+    .gallery__firts-image{
+        border-radius: 24px;
+        width: 1013px;
+        height: 422px;
+    }
+    .gallery__second-image{
+        width: 1013px;
+        height: 422px;
+        border-radius: 24px;
+    }
+
+}
+
+// анімація зміни
+.gallery__firts-image,.gallery__second-image{
+    // border:2px solid transparent;
+    margin:0;
+    padding:0;
+    }
+    
+    .gallery__firts-image{
+    opacity:1px;
+    display:block;
+    position:absolute;
+    z-index:100;
+    transition-duration:0.96s;
+    -webkit-transition-duration:0.96s;
+    -moz-transition-duration:0.96s;
+    -o-transition-duration:0.96s;
+    -ms-transition-duration:0.96s;
+    }
+    
+    .gallery__firts-image:hover {
+    opacity:0.00;
+    }
+     
+    .gallery__firts-image:hover {
+        opacity:0.00;
+        }
+
+    
