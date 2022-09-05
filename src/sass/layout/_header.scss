@@ -1,3 +1,8 @@
+    .page-header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 @media screen and (max-width: 767px) {
     .page-header {
         padding-top: 12px;
@@ -12,21 +17,11 @@
         display: none;
     }
 
-    .page-header__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .logo__img {
         width: 41px;
         height: 37px;
     }
 
-    // .page-nav {
-    //     display: flex;
-    //     align-items: center;
-    // }
     .menu__header {
         display: nav;
     }
@@ -38,10 +33,6 @@
         line-height: 0;
         fill: var(--social-color-accent);
     }
-
-    // .mobile-menu-open__icon {
-    //     fill: var(--social-color-accent);
-    // }
 
     .header__button {
         display: none;
@@ -60,12 +51,6 @@
         padding-bottom: 20px;
     }
 
-    .page-header__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .logo__img {
         width: 48px;
         height: 44px;
@@ -75,7 +60,6 @@
         border: none;
         padding: 0;
         background-color: var(--background-color-mobile-menu);
-        // line-height: 0;
         margin-left: auto;
     }
 
@@ -84,9 +68,6 @@
     }
 
     .header__button {
-        padding: 12px 33px;
-        border-radius: 10px;
-        border: none;
         margin-left: 32px;
     }
 
@@ -98,13 +79,7 @@
 //  Desktop 
 
 @media screen and (min-width: 1200px) {
-    // .container{
-    // padding-left: 16px;
-    // padding-right: 16px;
-    // width: 1200px;
-    // }
-
-    .mobile-menu-open__icon {
+     .mobile-menu-open__icon {
         display: none;
     }
 
@@ -112,28 +87,10 @@
         display: none;
     }
 
-    .page-header__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-
-    // .page-nav {
-    //     display: flex;
-    //     align-items: center;
-    // }
-
-    .page-header__logo {
-        margin-right: 270px;
-    }
-
     .page-header {
     position: absolute;
     width: 100%;
     top: 0;}
-
- 
 
     .menu__header {
         display: flex;
@@ -142,7 +99,6 @@
     }
 
     .menu__link {
-        // display: blok;
         @include font(16px, 700, 19.5px, 0.03em, var(--background-color-address));
         white-space: nowrap;
         transition: color var(--speed-animation) var(--animation-type);
@@ -158,4 +114,8 @@
         width: 60px;
         height: 65px;
     }
+
+    .header__button {
+        margin-left: unset;
+          }
 }
