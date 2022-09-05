@@ -2,7 +2,7 @@
     position: relative;
     
     background-color: var(--background-color-modal);
-    background-image: url(/src/images/mobile/mobile-gallery/mobile-backgroundimg.png);
+    background-image: url(/src/images/mobile/mobile-customer-reviews-bgimg/mobile-backgroundimg.png);
     background-repeat: no-repeat;
     
     background-position: center;
@@ -67,7 +67,7 @@
     background-color: var(--background-color-main);
     border-radius: 10px;
     width: 100%;
-    
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,10 +83,7 @@
 }
 
 .customer-reviews__information{
-    margin-top: 30px;
-    margin-bottom: 31px;
     font-family: var(--secondary-font);
-    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
@@ -97,19 +94,22 @@
 
 @media screen and (min-width: $tablet) {
     .customer-reviews {
-        margin-top: 0;
+        
         padding-top: 223px;
         padding-bottom: 383px;
-        background-image: url(/src/images/tablet/tablet-gallery/tablet-backgroundimg.png);
+        background-image: url(/src/images/tablet/tablet-customer-reviews-bgimg/tablet-backgroundimg.png);
         background-size: cover;
     } 
+    .picture-wrapper{
+        margin-bottom: 28px;
+    }
     .swiper{
         max-width: 705px;
         min-height: 355px;
     }
     .wrapper-text{
         padding: 29px 80px;
-        margin-top: 28px;
+        margin-bottom: 32px;
         text-align: center;
         
 
@@ -124,8 +124,6 @@
        
     }
     .customer-reviews__information{
-        margin-top: 32px;
-        
         font-family: var(--primary-font);
         font-weight: 500;
         font-size: 16px;
@@ -133,11 +131,10 @@
     }
     .thumb{
         min-width: 704px;
-        
     }
+
     .backgroundimg{
-        
-     border-radius: 18px;
+      border-radius: 18px;
     }
 }
 
@@ -145,27 +142,29 @@
     .customer-reviews{
         padding-top: 450px; 
         padding-bottom: 207px;
-        background-image: url(/src/images/desktop/desktop-gallery/desktop-backgroundimg.png);
+        background-image: url(/src/images/desktop/desktop-customer-reviews-bgimg/desktop-backgroundimg.png);
         background-size: cover;
     }
     .swiper{
         max-width: 968px;
         min-height: 361px;
     }
+    .picture-wrapper{
+        margin-bottom: 32px;
+    }
     .wrapper-text{
         padding: 39px 74px;
-        margin-top: 32px;
+        margin-bottom: 32px;
     }
     .customer-reviews__text{
         font-size: 14px;
     }
+
     .thumb{
         min-width: 1013px;
-        
-        
     }
+
     .backgroundimg{
-        
-     border-radius: 24px;
+      border-radius: 24px;
     }
 }
