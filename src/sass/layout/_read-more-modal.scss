@@ -1,1 +1,37 @@
+.modal {
+  position: absolute;
+  @extend %position-center;
 
+  width: 94vw;
+
+  @media screen and (min-width: $mobile) {
+    width: 451px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
+
+  height: auto;
+  padding: 40px;
+  margin: 90px 15px;
+  margin: auto;
+
+  border-radius: 4px;
+
+  background-color: var(--prymary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform var(--speed-animation) var(--animation-type);
+
+  &__header {
+    margin-bottom: 12px;
+
+    @include font(20px, 700, 30px, 0.03em, var(--bold-color));
+
+    @media screen and (min-width: $desktop) {
+      @include font(20px, 700, 23px, 0.03em, var(--bold-color));
+    }
+  }
+}
