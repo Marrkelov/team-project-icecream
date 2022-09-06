@@ -3,10 +3,12 @@
   top: 0;
   left: 0;
 
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 
   width: 100vw;
   height: 100vh;
