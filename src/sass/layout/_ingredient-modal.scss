@@ -27,12 +27,13 @@
     left: 50%;
 
     overflow: scroll;
-       & ::-webkit-scrollbar{
-            display:none;}
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
    
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     max-width: 280px;
     max-height: 990px;
 
@@ -65,7 +66,7 @@
 
     &:hover,
     &:focus {
-        fill: var(--accent-color)
+        fill: var(--button-color-accent)
     }
 }
 
@@ -204,6 +205,10 @@ screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
     border: 1px solid #84A178;
     border-radius: 10px;
     padding-left: 10px;
+        &:focus {
+            outline: none;
+            border: 2px solid var(--button-color-accent);
+    }
 }
 
 .modal-form__message {
@@ -216,6 +221,9 @@ screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
 
     padding: 11px 10px;
     text-align: left;
+        &:focus {
+            outline: none;
+            border: 2px solid var(--button-color-accent);}
 }
 
 .modal-form-submit {
@@ -271,8 +279,6 @@ screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
             }}
 
     .modal__products {
-        width: 100vw;
-        height: 100vh;
         max-width: 528px;
         max-height: 995px;}
 
