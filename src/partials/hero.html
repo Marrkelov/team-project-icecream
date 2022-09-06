@@ -1,74 +1,115 @@
 <section class="hero">
-    <div class="container hero-container">
-        <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
-    
-        <div class="hero__battons-flex">
-            <button class="hero__button" type="button">Products</button>
-            <a href="#" class="hero__button-how hero__button--frameless" >How it’s made?</a>
-        </div>
+  <div class="container hero-container">
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title-span">passion</span>
+    </h1>
 
-        <div class="many-ice-block">
-            <p class="hero__many-ice-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-    
-                <button class="arrow-button hero__button--arrow " type="button">
-                    <svg class="hero__icon--arrow hero__icon--fill-arrow">
-                        <use href="./images/sprite.svg#arrow">
-                        </use>
-                    </svg>
-                </button>
-            </div>
-        <div class="restaurants">
-            <p class="restaurants__number restaurants__number_top">16</p>
-            <p class="restaurants_type">cafes</p>
-            <p class="restaurants__number">23</p>
-            <p class="restaurants_type">food trucks</p>
-        </div>
-    
-
-    
-      
-    
-        <picture>
-            
-            <source 
-                srcset="./images/desktop/desktop-hero/desktop-hero-ice-cream@1x.png 1x, ./images/desktop/desktop-hero/desktop-hero-ice-cream@2x.png 2x"
-                media="(min-width: 1200px)" />
-            <source
-                srcset="./images/tablet/tablet-hero/tablet-hero-ice-cream@1x.png 1x, ./images/tablet/tablet-hero/tablet-hero-ice-cream@2x-min.png 2x"
-                media="(min-width: 768px)" />        
-            <source
-                srcset="./images/mobile/mobile-hero/mobile-hero-ice-cream@1x.png 1x, ./images/mobile/mobile-hero/mobile-hero-ice-cream@2x.png 2x"
-                media="(max-width: 767px)"  />
-                
-            <img class="hero__ice-cream" src="./images/mobile/mobile-hero/mobile-hero-ice-cream@1x.png" alt="Happy ice-cream">
-        </picture>   
-        
-      
-    
-        <picture>
-            <source 
-                srcset="./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png 1x, ./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png 2x"
-                media="(min-width: 1200px)" />
-            <source
-                srcset="./images/tablet/tablet-hero/tablet-hero-many-ice@1x.png 1x, ./images/tablet/tablet-hero/tablet-hero-many-ice@2x.png 2x"
-                media="(min-width: 768px)" />        
-           
-            <img class="hero__many-ice-cream" src="./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png" alt="a plate with ice cream">
-        </picture>  
-        <picture>
-            <source 
-                srcset="./images/desktop/desktop-hero/desktop-hero-blur.png"
-                media="(min-width: 1200px)" />
-            <source 
-                srcset="./images/tablet/tablet-hero/tablet-hero-blur.png"
-                media="(min-width: 768px)" />   
-            <source 
-                srcset="./images/mobile/mobile-hero/mobile-hero-blur.png"
-                media="(max-width: 767px)" /> 
-
-            <img class="hero_ice-blur" src="./images/mobile/mobile-hero/mobile-hero-blur.png" alt="cooling effect for ice cream">
-        </picture>
-
-
+    <div class="hero__battons-flex">
+      <a href="#Our-products" class="hero__button link">Products</a>
+      <a
+        href="#How%20it's%20made?"
+        class="hero__button-how hero__button--frameless"
+        >How it's made?</a
+      >
     </div>
+
+    <div class="many-ice-block">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png 1x,
+            ./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/tablet-hero/tablet-hero-many-ice@1x.png 1x,
+            ./images/tablet/tablet-hero/tablet-hero-many-ice@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <img
+          class="hero__many-ice-cream"
+          src="./images/desktop/desktop-hero/desktop-hero-many-ice@1x.png"
+          alt="a plate with ice cream"
+        />
+      </picture>
+      <div class="many-ice-block__container">
+        <p class="hero__many-ice-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+
+        <button class="arrow-button hero__button--arrow" type="button">
+          <svg class="hero__icon--arrow hero__icon--fill-arrow">
+            <use href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <ul class="restaurants list">
+      <li class="restaurants__item">
+        <p class="restaurants__number restaurants__number_top">16</p>
+        <p class="restaurants_type">cafes</p>
+      </li>
+      <li class="restaurants__item">
+        <p class="restaurants__number">23</p>
+        <p class="restaurants_type">food trucks</p>
+      </li>
+    </ul>
+
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/desktop-hero/desktop-hero-ice-cream@1x.png 1x,
+          ./images/desktop/desktop-hero/desktop-hero-ice-cream@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/tablet-hero/tablet-hero-ice-cream@1x.png     1x,
+          ./images/tablet/tablet-hero/tablet-hero-ice-cream@2x-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile/mobile-hero/mobile-hero-ice-cream@1x.png 1x,
+          ./images/mobile/mobile-hero/mobile-hero-ice-cream@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <img
+        class="hero__ice-cream"
+        src="./images/mobile/mobile-hero/mobile-hero-ice-cream@1x.png"
+        alt="Happy ice-cream"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="./images/desktop/desktop-hero/desktop-hero-blur.png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/tablet/tablet-hero/tablet-hero-blur.png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/mobile-hero/mobile-hero-blur.png"
+        media="(max-width: 767px)"
+      />
+
+      <img
+        class="hero_ice-blur"
+        src="./images/mobile/mobile-hero/mobile-hero-blur.png"
+        alt="cooling effect for ice cream"
+      />
+    </picture>
+  </div>
 </section>
