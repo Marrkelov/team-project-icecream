@@ -273,7 +273,7 @@ screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
 @media screen and (min-width: $tablet){
 
     .modale__img-wrap {
-            &::before {
+        &::before {
                 content: '';
                 background-image: url(/src/images/modal_windows/modal_ingredients/tab-desktop/modal-tab-desk-ingredients.jpg);
             }}
