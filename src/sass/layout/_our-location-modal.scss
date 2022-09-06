@@ -1,4 +1,4 @@
-.modal {
+.our-location-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,6 +23,12 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+@media screen and (min-width: $desktop) {
+  .modal-product-cards {
+    display: flex;
+  }
 }
 
 .modal__button-icon {
