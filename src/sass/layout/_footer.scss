@@ -1,3 +1,11 @@
+.page-footer {
+  margin-bottom: 62px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
+}
+
 .footer__title {
   text-transform: uppercase;
   @include font(18px, 700, 22px, 0.03em, var(--text-color-main));
@@ -12,17 +20,19 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
-  .footer-container {
+.footer-container {
+  margin-bottom: 42px;
+
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .footer__subtitle {
   text-transform: uppercase;
   @include font(34px, 700, 41px, 0.04em, var(--text-color-main));
-  margin-bottom: 42px;
 
   @media screen and (min-width: $tablet) {
     @include font(48px, 700, 59px, 0.06em, var(--text-color-main));
@@ -96,6 +106,8 @@
 }
 
 .footer__line {
+  display: flex;
+  justify-content: center;
   border-top: 1px solid var(--border-line);
   width: 100%;
 }
@@ -105,20 +117,21 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 16px;
-  margin-bottom: 62px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-top: 16px;
+  // margin-bottom: 62px;
 
   @include font(14px, 700, 15px, 0.03em, var(--text-color-secondary-footer));
 
   @media screen and (min-width: $tablet) {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 14px;
     @include font(14px, 700, 18px, 0.02em, var(--text-color-secondary-footer));
   }
 
   @media screen and (min-width: $tablet) {
+    margin-top: 12px;
     @include font(12px, 700, 18px, 0.02em, var(--text-color-secondary-footer));
   }
 }
