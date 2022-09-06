@@ -6,8 +6,8 @@
 
 .advantage__block{
   margin-top: 28px;
-  margin-left: auto;
-  margin-right: auto;
+  
+  list-style: none;
 
   &_first{
       margin-top: 0px;
@@ -127,6 +127,7 @@ margin-bottom: 16px;
   .advantage__block{
     margin-top: 0;
     width: 152px;
+    
     // height: 253px;
   }
 
