@@ -14,8 +14,8 @@
 .contacts__container{
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     
     @media screen and (max-width:$to-tablet) {
             min-height: 1472px;
@@ -182,7 +182,7 @@
     @include font(16px, 500, 30px, 0.04em, var(--text-color-time));
     }
 }
-.btn-wrapper{
+.btn-list{
     display: flex;
     flex-direction: column;
     align-items: center;
