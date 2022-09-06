@@ -90,7 +90,8 @@
     width: 50px;
   }
 
-  &:focus .product-cards__icon {
+  &:focus .product-cards__icon,
+  &:focus .hero__icon--arrow {
     left: 0;
     width: 50px;
   }
