@@ -1,0 +1,337 @@
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal__products {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+   
+    width: 100vw;
+    height: 95vh;
+    max-width: 280px;
+    max-height: 990px;
+
+    background-color: #F5F5F5;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 20px 32px;
+    z-index: 999;
+
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--button-color-accent)
+    }
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    @include font(20, 400, 28, 0.04em, var(--text-color-titles));
+    align-items: center;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.modale__img-wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 132px;
+    height: 131px;
+
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    margin-bottom: 26px;
+
+    &::before {
+        content: '';
+        background-image: url(/src/images/modal_windows/modal_ingredients/mobile/modal-mob-ingredients.jpg);
+        background-size: cover;
+        width: 132px;
+        height: 131px;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        top: -7px;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
+screen and (min-resolution: 192dpi) and (max-width: $to-tablet),
+screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
+    .modale__img-wrap {
+        &::before{
+            content: '';
+            background-image: url(/src/images/modal_windows/modal_ingredients/mobile/modal-mob-ingredients@2x.jpg);
+        }
+}}
+
+.nutrition__list {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 39px;
+}
+
+.nutrition__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(10px, 400, 12px, 0.04em, var(--text-color-titles));
+
+    align-items: center;
+    text-align: center;
+}
+
+.nutrition__item-wrap {
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nutrition__wrap {
+    width: 43px;
+    height: 43px;
+    border-radius: 40px;
+
+    background: #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    color: var(--text-color-titles);
+    padding-top: 6px;
+    margin-bottom: 8px;
+}
+
+.nutrition__item-index {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(10px, 500, 28px, 0.04em, var(--text-color-titles));
+
+    align-items: center;
+    text-align: center;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font(14px, 400, 26px, 0.04em, var(--text-color-titles));
+
+    margin-bottom: 48px;
+}
+
+.table__ingredients-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+
+    @include font(20px, 500, 28px, 0.04em, var(--text-color-titles));
+
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+.ingredients-amount {
+    text-align: right;
+}
+
+.modal-form__field {
+    margin-bottom: 16px;}
+
+.modal-form__field-comment{
+    margin-bottom: 32px;
+}
+
+.modal-form__input {
+    @include font(14px, 400, 20px, 0.04em, var(--text-color-titles));
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding-left: 10px;
+        &:focus {
+            outline: none;
+            border: 2px solid var(--button-color-accent);
+    }
+}
+
+.modal-form__message {
+    resize: none;
+    width: 100%;
+    height: 84px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    padding: 11px 10px;
+    text-align: left;
+        &:focus {
+            outline: none;
+            border: 2px solid var(--button-color-accent);}
+}
+
+.modal-form-submit {
+    width: 150px;
+    height: 42px;
+    background-color: var(--border-modal);
+    border-radius: 10px;
+    border: none;
+    @include font(14px, 600, 17px, 0.04em, var(--text-color-titles));
+    padding: 12px 43px;
+
+    display: flex;
+    align-self: center;
+    text-align: center;
+
+    transition: background-color var(--speed-animation) var(--animation-type),
+        border var(--speed-animation) var(--animation-type),
+        color var(--speed-animation) var(--animation-type),
+        fill var(--speed-animation) var(--animation-type);
+
+    &:hover {
+        background-color: var(--button-color-accent);
+    }
+
+    &:focus {
+        color: var(--text-color-main);
+        fill: var(--text-color-main);
+    }
+
+    &--without-bg {
+        background-color: transparent;
+        border: 2px solid var(--button-color-main);
+        color: var(--text-color-button);
+
+        &:hover {
+            background-color: transparent;
+            border-color: var(--button-color-accent);
+        }
+
+        &:focus {
+            color: var(--text-color-main);
+            fill: var(--text-color-main);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet){
+
+    .modale__img-wrap {
+        &::before {
+                content: '';
+                background-image: url(/src/images/modal_windows/modal_ingredients/tab-desktop/modal-tab-desk-ingredients.jpg);
+            }}
+
+    .modal__products {
+        max-width: 528px;
+        max-height: 995px;}
+
+    .modal-form__input{
+        width: 368px;
+    }
+    .modal-form__message{
+        width: 368px;
+    }
+
+    .modal-form__field{
+        text-align: center;
+    }
+    .nutrition__list{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 48px;
+        justify-content: center;
+    }
+    .nutrition__item-wrap{
+        width: 65px;
+        height: 90px;
+        padding-left: 4px;
+    }
+    .nutrition__wrap {
+        width: 53px;
+        height: 53px;
+        border-radius: 40px;
+
+        background: #9CBE8F;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+        color: var(--text-color-titles);
+        padding-top: 14px;
+        margin-bottom: 11px;
+}
+
+    .nutrition__item-index {
+        @include font(12px, 500, 28px, 0.04em, var(--text-color-titles));
+    }
+    .nutrition__item {
+        @include font(12px, 400, 15px, 0.04em, var(--text-color-titles));
+    
+
+}}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+screen and (min-resolution: 192dpi) and (min-width: $tablet),
+screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    .modale__img-wrap {
+        &::before {
+            content: '';
+            background-image: url(/src/images/modal_windows/modal_ingredients/tab-desktop/modal-tab-desk-ingredients@2x.jpg);
+        }
+    }
+}
