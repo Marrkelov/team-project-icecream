@@ -1,22 +1,4 @@
-.backdrop {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
 
-    background-color: rgba(0, 0, 0, 0.2);
-
-    transition: opacity var(--speed-animation) var(--animation-type), visibility var(--speed-animation) var(--animation-type);
-
-    &.is-hidden {
-        opacity: 0;
-        pointer-events: none;
-        visibility: hidden;
-    }
-}
 
 .modal {
     position: absolute;
@@ -45,32 +27,6 @@
     transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal__button-close{
-    
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
-
-    background-color: transparent;
-    border: none;
-
-    transition: fill var(--speed-animation) var(--animation-type);
-    
-    &:hover{
-        fill: var(--text-color-accent);
-    }
-
-    @media screen and (min-width:$tablet) {
-            top: 20px;
-            right: 20px;
-        }
-}
 .modal__button-icon{
     width:16px;
     height:16px;
@@ -108,21 +64,20 @@
         border: none;
         border-radius: 10px;
         background-color: var(--button-color-main);
-    
-        transition: background-color var(--speed-animation) var(--animation-type),
-            color var(--speed-animation) var(--animation-type);
-    
-        &:hover {
-            background-color: var(--button-color-accent);
-        }
-    
-        &:focus {
-            color: var(--text-color-main);
-        }
+        
+        transition: background-color var(--speed-animation) var(--animation-type);
+        
+            &:hover {
+                background-color: var(--button-color-accent);
+            }
 }
 
 .modal__button-link{
     @include font(12px, 600, 15px, 0.03em, var(--text-color-button));
+
+    &:focus {
+        color: var(--text-color-main);
+    }
 
     @media screen and (min-width:$tablet) {
         @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
