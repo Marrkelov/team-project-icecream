@@ -66,7 +66,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: -100;
+    top: -100px;
     
     &::before {
         content: '';
@@ -76,7 +76,7 @@
         border-radius: 100px;
         display: block;
         position: relative;
-        top: -11
+        top: -11px;
         }
 
 }
