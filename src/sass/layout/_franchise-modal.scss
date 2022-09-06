@@ -1,131 +1,129 @@
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 280px;
-    padding: 28px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    
+.modal-contacts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background-color: var(--background-color-modal);
-    border: 2px solid var(--border-modal);
-    border-radius: 10px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--speed-animation) var(--animation-type);
+  background-color: var(--background-color-modal);
+  border: 2px solid var(--border-modal);
+  border-radius: 10px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--speed-animation) var(--animation-type);
 
-    @media screen and (min-width:$tablet) {
-        width: 568px;
-        padding: 32px 60px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    padding: 32px 60px;
+  }
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal__button-icon {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 
-    @media screen and (min-width:$tablet) {
-        width: 20px;
-        height: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
-.modal__title{
-    text-align: center;
-    margin-bottom: 20px;
-    
-        font-family: var(--title-font);
-        @include font(16px, 400, 24px, 0.01em, var(--text-color-titles));
-    
-        @media screen and (min-width:$tablet) {
-            width: 322px;
-            margin-bottom: 24px;
-            @include font(20px, 400, 28px, 0.01em, var(--text-color-titles));
-        }
-}
-.modal__text-small{
+.modal__title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-family: var(--title-font);
+  @include font(16px, 400, 24px, 0.01em, var(--text-color-titles));
+
+  @media screen and (min-width: $tablet) {
+    width: 322px;
     margin-bottom: 24px;
-    @include font(14px, 400, 20px, 0.01em, var(--text-color-titles));
+    @include font(20px, 400, 28px, 0.01em, var(--text-color-titles));
+  }
+}
+.modal__text-small {
+  margin-bottom: 24px;
+  @include font(14px, 400, 20px, 0.01em, var(--text-color-titles));
 
-    @media screen and (min-width:$tablet) {
-            // min-width: 448px;
-            margin-bottom: 32px;
-            @include font(16px, 400, 22px, 0.01em, var(--text-color-titles));
-        }
+  @media screen and (min-width: $tablet) {
+    // min-width: 448px;
+    margin-bottom: 32px;
+    @include font(16px, 400, 22px, 0.01em, var(--text-color-titles));
+  }
 }
-.modal-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.modal-form__input
-{
-    width: 224px;
-    height: 32px;
-    margin-bottom: 12px;
-    padding-left: 16px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-        @media screen and (min-width:$tablet){
-            height: 42px;
-            width: 368px;
-        }
+.modal-form__input {
+  width: 224px;
+  height: 32px;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  @media screen and (min-width: $tablet) {
+    height: 42px;
+    width: 368px;
+  }
 }
-.modal-form__comment{
-    width: 224px;
-    height: 64px;
-    margin-bottom: 24px;
-    padding-left: 16px;
-    padding-top: 8px;
-        background: rgba(248, 210, 78, 0.1);
-        border: 1px solid #84A178;
-        border-radius: 10px;
-        @media screen and (min-width:$tablet) {
-                height: 84px;
-                width: 368px;
-            }
+.modal-form__comment {
+  width: 224px;
+  height: 64px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  padding-top: 8px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  @media screen and (min-width: $tablet) {
+    height: 84px;
+    width: 368px;
+  }
 }
 
 ::-webkit-input-placeholder {
-    @include font(14px, 400, 20px, 0.04em, var(--text-color-titles));
-    // color: var(--text-color-titles);
+  @include font(14px, 400, 20px, 0.04em, var(--text-color-titles));
+  // color: var(--text-color-titles);
 }
 
 :-moz-placeholder {
-    color: var(--text-color-titles);
+  color: var(--text-color-titles);
 }
 
 ::-moz-placeholder {
-    color: var(--text-color-titles);
+  color: var(--text-color-titles);
 }
 
 :-ms-input-placeholder {
-    color: var(--text-color-titles);
+  color: var(--text-color-titles);
 }
 
 .modal-form__button {
-    min-width: 114px;
-    padding: 12px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--button-color-main);
+  min-width: 114px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color-main);
 
-    @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
+  @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
 
-    transition: background-color var(--speed-animation) var(--animation-type),
-        color var(--speed-animation) var(--animation-type);
+  transition: background-color var(--speed-animation) var(--animation-type),
+    color var(--speed-animation) var(--animation-type);
 
-    &:hover {
-        background-color: var(--button-color-accent);
-    }
+  &:hover {
+    background-color: var(--button-color-accent);
+  }
 
-    &:focus {
-        color: var(--text-color-main);
-    }
+  &:focus {
+    color: var(--text-color-main);
+  }
 }
