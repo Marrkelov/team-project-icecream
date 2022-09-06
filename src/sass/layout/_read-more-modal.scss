@@ -2,7 +2,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.modal {
+.modal__read-more {
   position: absolute;
   @extend %position-center;
 
@@ -65,7 +65,7 @@ body.modal-open {
 }
 
 @media screen and (min-width: $tablet) {
-.modal {
+.modal__read-more {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 60px;
