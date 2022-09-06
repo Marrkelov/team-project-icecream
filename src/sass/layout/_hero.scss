@@ -1,177 +1,177 @@
 .hero {
+  &-container {
+    position: relative;
+    @media screen and (max-width: $to-tablet) {
+      width: 320px;
+      height: 392px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      height: 311px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 546px;
+    }
+  }
   height: 502px;
-  // position: relative;
   padding-top: 110px;
   background-image: url('../images/mobile/mobile-hero/mobile-hero-buttons@1x.png');
   background-size: 320px, cover;
   background-repeat: no-repeat;
   background-position: bottom;
-}
 
-.hero__title {
-  width: 247px;
-  font-family: 'Seymour One';
-  font-style: normal;
-  @include font(26px, 400, 33px, 0.04em, var(--text-color-main));
-
-  text-transform: uppercase;
-  color: var(--text-color-main);
-}
-.hero__title-span {
-  font-size: 34px;
-}
-
-.hero__battons-flex {
-  margin-top: 32px;
-
-  display: flex;
-}
-.hero__button-product {
-  width: 62px;
-  height: 24px;
-
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-  background-color: transparent;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  @include font(8px, 600, 10px, 0, var(--text-color-secondary));
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  &:hover {
-    border: 2px solid #0a8817;
-  }
-  &:focus {
-    border: 2px solid #0a8817;
-    color: var(--text-color-main);
-  }
-}
-
-.hero__button-how {
-  width: 83px;
-  height: 24px;
-
-  margin-left: 8px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  @include font(8px, 600, 10px, 0.03em, var(--text-color-button-frameless));
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.many-ice-block {
-  margin-left: 185px;
-  margin-top: 56px;
-}
-.hero__many-ice-description {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-
-  margin-bottom: 12px;
-
-  color: var(--text-color-main);
-  width: 151px;
-}
-
-.restaurants {
-  position: absolute;
-  top: -10px;
-  right: 32px;
-}
-.restaurants__number {
-  font-family: 'Montserrat';
-  font-style: normal;
-  @include font(28px, 900, 34px, 0.04em, var(--text-color-secondary));
-
-  text-align: right;
-  text-transform: uppercase;
-
-  margin-top: 20px;
-
-  &_top {
-    margin-top: 0px;
-  }
-}
-
-.restaurants_type {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-
-  text-align: right;
-
-  color: var(--text-color-main);
-
-  margin-top: 4px;
-}
-
-.hero__icon--fill-arrow {
-  fill: var(--text-color-main);
-}
-// ===============MOBILE============
-.hero-container {
-  position: relative;
-  @media screen and (max-width: $to-tablet) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
-    height: 392px;
+  @media (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/mobile-hero/mobile-hero-buttons@2x.png');
   }
 
   @media screen and (min-width: $tablet) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 768px;
-    height: 311px;
+    height: 415px;
+    padding-top: 104px;
+    background-image: url('../images/tablet/tablet-hero/tablet-hero-buttons@1x.png');
+    background-size: 768px, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/tablet-hero/tablet-hero-buttons@2x.png');
+    }
   }
 
   @media screen and (min-width: $desktop) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    height: 546px;
-  }
-}
-@media (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../images/mobile/mobile-hero/mobile-hero-buttons@2x.png');
-  }
-}
-.hero__ice-cream {
-  position: absolute;
-  bottom: 0;
-  left: 82px;
-  z-index: 5;
-}
-.hero_ice-blur {
-  filter: blur(53.681px);
-  position: absolute;
-  bottom: 0;
-  left: 82px;
-  z-index: -1;
+    height: 664px;
+    padding-top: 118px;
+    background-image: url('../images/desktop/desktop-hero/desktop-hero-buttons@1x.png');
+    background-size: 1200px, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
-  // підсвідка
-  animation: pulse 3s linear infinite;
+    @media (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/desktop-hero/desktop-hero-buttons@2x.png');
+    }
+  }
+
+  &__title {
+    width: 247px;
+    font-family: var(--title-font);
+    @include font(26px, 400, 33px, 0.04em, var(--text-color-main));
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+      @include font(18px, 400, 23px, 0.03em, var(--text-color-main));
+      width: 181px;
+
+      &-span {
+        font-size: 24px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      width: 367px;
+
+      &-span {
+        @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
+      }
+    }
+  }
+
+  &__battons-flex {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 28px;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__button-how {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+
+  &__many-ice-description {
+    @media screen and (max-width: $to-tablet) {
+      display: none;
+    }
+
+    @include font(12px, 400, 14px, 0.03em, var(--text-color-main));
+    width: 197px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__icon--fill-arrow {
+    fill: var(--text-color-main);
+  }
+
+  &__many-ice-cream {
+    width: 152px;
+
+    @media screen and (min-width: $desktop) {
+      width: 225px;
+    }
+  }
+
+  &__ice-cream {
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+
+    @media screen and (min-width: $tablet) {
+      left: 418px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 651px;
+    }
+  }
+
+  &_ice-blur {
+    filter: blur(53.681px);
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+    z-index: -1;
+
+    // підсвідка
+    animation: pulse 3s linear infinite;
+
+    @media screen and (min-width: $tablet) {
+      left: 418px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 651px;
+    }
+  }
+
+  &__filter {
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+    z-index: 4;
+    background: rgba(252, 252, 252, 0.44);
+    filter: blur(53.681px);
+  }
 }
+
 // підсвідка
-@-webkit-keyframes "pulse" {
+@-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -186,216 +186,60 @@
   }
 }
 
-.hero__filter {
-  position: absolute;
-  bottom: 0;
-  margin-left: 82px;
-  z-index: 4;
-  background: rgba(252, 252, 252, 0.44);
-  filter: blur(53.681px);
-}
-
-.hero__buttons {
-  position: absolute;
-  bottom: 0;
-}
-
-@media screen and (max-width: $to-tablet) {
-  .hero__many-ice-cream {
+.many-ice-block {
+  @media screen and (max-width: $to-tablet) {
     display: none;
   }
-  .hero__many-ice-description {
-    display: none;
-  }
-  .hero__battons-link {
-    display: none;
-  }
-  .restaurants {
-    display: none;
-  }
-}
 
-// ===============TABLET=============
-@media screen and (min-width: $tablet) {
-  .hero {
-    height: 415px;
-    // position: relative;
-    padding-top: 104px;
-    background-image: url('../images/tablet/tablet-hero/tablet-hero-buttons@1x.png');
-    background-size: 768px, cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url('../images/tablet/tablet-hero/tablet-hero-buttons@2x.png');
-    }
-  }
-
-  .hero__title {
-    width: 181px;
-    font-size: 18px;
-    line-height: 23px;
-  }
-  .hero__title-span {
-    font-weight: 400;
-    font-size: 24px;
-  }
-  .hero__battons-flex {
-    margin-top: 20px;
-  }
-  .hero__ice-cream {
-    left: 418px;
-  }
-  .hero_ice-blur {
-    left: 418px;
-  }
-  .hero__many-ice-cream {
-    position: absolute;
-    bottom: 13px;
-    left: 32px;
-  }
-
-  .hero__many-ice-description {
-    margin-bottom: 25px;
-  }
-
-  .hero-container {
-    position: relative;
-  }
-}
-
-// ===============DESKTOP================
-@media screen and (min-width: $desktop) {
-  .hero {
-    height: 664px;
-    // position: relative;
-    padding-top: 118px;
-    background-image: url('../images/desktop/desktop-hero/desktop-hero-buttons@1x.png');
-    background-size: 1200px, cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url('../images/desktop/desktop-hero/desktop-hero-buttons@2x.png');
-    }
-  }
-  .hero__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
-
-    text-transform: uppercase;
-
-    width: 367px;
-  }
-  .hero__title-span {
-    font-family: 'Seymour One';
-    font-style: normal;
-    @include font(38px, 400, 48px, 0.04em, var(--text-color-main));
-
-    text-transform: uppercase;
-
-    width: 367px;
-  }
-  .hero__battons-flex {
-    margin-top: 28px;
-  }
-  .hero__button-product {
-    width: 134px;
-    height: 42px;
-
-    border: 2px solid #f8d24e;
-    border-radius: 8px;
-    background-color: transparent;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    @include font(14px, 600, 18px, 0.03, var(--text-color-secondary));
-
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    &:hover {
-      border: 2px solid #0a8817;
-    }
-    &:focus {
-      border: 2px solid #0a8817;
-      color: var(--text-color-main);
-    }
-  }
-  .hero__button-how {
-    width: 154px;
-    height: 40px;
-
-    margin-left: 12px;
-
-    @include font(14px, 600, 17px, 0, var(--button-color-main));
-  }
-  .hero__ice-cream {
-    left: 651px;
-  }
-  .hero_ice-blur {
-    left: 651px;
-  }
-  .hero__many-ice-cream {
-    position: absolute;
-    bottom: 65px;
-    left: 17px;
+    gap: 33px;
   }
 
-  .hero__many-ice-description {
-    font-size: 14px;
-    width: 200px;
+  @media screen and (min-width: $desktop) {
+    gap: 14px;
   }
-  .many-ice-block {
-    margin-left: 240px;
-    margin-top: 111px;
+}
+
+.restaurants {
+  @media screen and (max-width: $to-tablet) {
+    display: none;
   }
-  .restaurants__number {
-    @include font(46px, 900, 56px, 0.04em, var(--text-color-secondary));
 
-    text-align: right;
-    text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
 
-    margin-top: 16px;
-
-    &_top {
-      margin-top: 0px;
-    }
-  }
-  .restaurants_type {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-
-    text-align: right;
-
-    color: var(--text-color-main);
-
-    margin-top: 4px;
-  }
-  .restaurants {
-    position: absolute;
+  @media screen and (min-width: $desktop) {
     top: 8px;
     right: 16px;
   }
-  .hero__many-ice-cream {
-    position: absolute;
-    bottom: 65px;
-    margin-left: 0px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
-  // .hero__many-ice-cream{
-  //     position: absolute;
-  //     bottom: 65px;
-  //     margin-left: 0px;
-  // }
+
+  &__number {
+    @include font(28px, 900, 34px, 0.04em, var(--text-color-secondary));
+    text-align: right;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      @include font(46px, 900, 56px, 0.04em, var(--text-color-secondary));
+    }
+  }
+
+  &_type {
+    @include font(8px, 400, 10px, 0.03em, var(--text-color-main));
+    text-align: right;
+
+    @media screen and (min-width: $desktop) {
+      @include font(14px, 400, 17px, 0.03em, var(--text-color-main));
+    }
+  }
 }
