@@ -1,0 +1,58 @@
+<section class="by-now-modal">
+  <div class="backdrop">
+    
+      <div class="by-now-modal">
+        <button type="button" class="modal__button-close">
+          <svg class="modal-close-button-icon" width="16" height="16">
+            <use href="./images/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-products__buy">Buy now</h2>
+        <ul class="modal-products__cards">
+          <li class="modal-product-cards__item modal-product-cards__item-first list">
+            <div class="modal-product-cards__wrap-first"></div>
+            <h3 class="modal-product-cards__title">ice cream</h3>
+          </li>
+          <li class="modal-product-cards__item modal-product-cards__item-second list">
+            <div class="modal-product-cards__wrap-second"></div>
+            <h3 class="modal-product-cards__title">ice coffee</h3>
+          </li>
+          <li class="modal-product-cards__item modal-product-cards__item-third list">
+            <div class="modal-product-cards__wrap-third"></div>
+            <h3 class="modal-product-cards__title">milkshake</h3>
+          </li>
+        </ul>
+        <form class="modal__form">
+          <label class="modal__field">
+            <input
+              type="text"
+              name="user_name"
+              class="modal__input"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Z]+"
+              minlength="2"
+            />
+          </label>
+          <label class="modal__field">
+            <input
+              type="tel"
+              name="user_phone"
+              class="modal__input"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="XXX-XXX-XX-XX"
+            />
+          </label>
+          <textarea
+            class="modal__message"
+            name="user_message"
+            placeholder="Comment"
+          ></textarea>
+          <button type="submit" class="modal-form-btn">Submit</button>
+        </form>
+      </div>
+    
+  </div>
+</section>

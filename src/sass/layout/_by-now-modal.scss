@@ -1,0 +1,275 @@
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.2);
+  // padding: 15px 15px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+
+  z-index: 10;
+
+  overflow: auto;
+}
+
+
+.by-now-modal {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid var(--border-modal);
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 28px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  width: 280px;
+  height: 986px;
+ 
+  background: var(--background-color-address);
+ 
+}
+
+.modal__button-close {
+position: absolute;
+top: 11px;
+right: 11px;
+      &:hover .modal-close-button-icon,
+      &:focus .modal-close-button-icon {
+          fill: var(--button-color-accent);
+}
+}
+
+.modal-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-size: contain;
+  background-color: var(--background-color-modal);
+} 
+
+.modal-products__buy {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.50;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 83px;
+}
+
+.modal-product-cards__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-top: 95px;
+}
+
+
+.modal-products__cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 94px;
+  margin-bottom: 24px;
+}
+
+.modal-product-cards__item {
+  display: flex;
+  flex-direction: column;
+  width: 132px;
+  height: 135px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 24px;
+}
+
+.modal-product-cards__item-first {
+  border: 2px solid var(--icecream-color);
+  border-radius: 15.7808px;
+  position: relative;
+}
+
+.modal-product-cards__item-second {
+  background: var(--icecoffee-color);
+  border-radius: 15.7808px;
+  position: relative;
+}
+
+.modal-product-cards__item-third {
+  border: 2px solid var(--milkshakes-color);
+  border-radius: 15.7808px;
+  position: relative;
+}
+
+.modal-product-cards__wrap-first,
+.modal-product-cards__wrap-second,
+.modal-product-cards__wrap-third {
+  position: absolute;
+  width: 132px;
+  height: 138px;
+  border-radius: 50%;
+  top: -65;
+  
+  &::before {
+      content: '';
+      background-size: cover;
+      width: 132px;
+      height: 138px;
+      border-radius: 100px;
+      display: block;
+      position: relative;
+      top: -11
+      }
+
+}
+
+.modal-product-cards__wrap-first {
+  background: linear-gradient(0deg, var(--icecream-bg-img), var(--icecream-bg-img)), #D9D9D9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+  &::before {
+      content: '';
+      background-image: url(../images/mobile/mobile-products/mobile-products-ice-cream@1x.jpg);
+  }
+}
+
+.modal-product-cards__wrap-second {
+  background: linear-gradient(0deg, var(--icecoffee-bg-img), var(--icecoffee-bg-img)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+
+  &::before {
+      content: '';
+      background-image: url(../images/mobile/mobile-products/mobile-products-ice-coffe@1x.jpg);}
+}
+
+.modal-product-cards__wrap-third {
+  background: linear-gradient(0deg, var(--milkshakes-bg-img),var(--milkshakes-bg-img)), #D9D9D9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+
+  &::before {
+      content: '';
+      background-image: url(../images/mobile/mobile-products/mobile-products-milshakes@1x.jpg);}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: $to-tablet),
+screen and (min-resolution: 192dpi) and (max-width: $to-tablet),
+screen and (min-resolution: 2dppx) and (max-width: $to-tablet) {
+  
+  .modal-product-cards__wrap-first {
+      &::before {
+          content: '';
+          background-image: url(../images/mobile/mobile-products/mobile-products-ice-cream@2x.jpg);}}
+  
+  .modal-product-cards__wrap-second {
+      &::before {
+          content: '';
+          background-image: url(../images/mobile/mobile-products/mobile-products-ice-coffe@2x.jpg);}}
+  
+  .modal-product-cards__wrap-third {
+      &::before {
+          content: '';
+          background-image: url(../images/mobile/mobile-products/mobile-products-milshakes@2x.jpg);}}
+}
+
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  display: block;
+  width: 224px;
+  height: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--border-modal-input);
+  border-radius: 10px;
+
+  &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: #000000;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 12px;
+  }
+
+  &:focus {
+      border-color: var(--border-modal);
+      outline: none;
+  }
+}
+
+.modal__message {
+  width: 224px;
+  height: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--border-modal-input);
+  border-radius: 10px;
+
+  &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: #000000;
+      padding-top: 8px;
+      padding-left: 12px;
+  }
+
+  &:focus {
+      border-color: var(--border-modal);
+      outline: none;
+  }
+}
+
+.modal-form-btn {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  width: 150px;
+  height: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  background: var(--border-modal);
+  border-radius: 10px;
+  border: none;
+  color: #000000;
+
+      &:hover,
+      &:focus {
+          background: var(--button-color-accent);
+}
+}
