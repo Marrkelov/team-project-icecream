@@ -150,3 +150,9 @@
     }
   }
 }
+
+.modal__button-close {
+  border: none;
+  background-color: transparent;
+  fill: var(--text-color-button);
+}
