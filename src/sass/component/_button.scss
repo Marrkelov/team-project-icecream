@@ -152,7 +152,6 @@
   }
 }
 
-.modal__button-open,
 .menu__button-open {
   border: none;
   background-color: transparent;
@@ -164,27 +163,26 @@
   }
 }
 
-// .modal__button-open {
-//   padding: 12px 34px;
-//   border: none;
-//   border-radius: 10px;
-//   background-color: var(--button-color-main);
-//   @include font(12px, 600, 15px, 00.03em, var(--text-color-burron-modal));
+.modal__button-open {
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--button-color-main);
+  @include font(12px, 600, 15px, 00.03em, var(--text-color-burron-modal));
 
-//   @media screen and (min-width: $tablet) {
-//     @include font(14px, 600, 17px, 00.03em, var(--text-color-burron-modal));
-//   }
+  @media screen and (min-width: $tablet) {
+    @include font(14px, 600, 17px, 00.03em, var(--text-color-burron-modal));
+  }
 
-//   &:hover {
-//     background-color: var(--button-color-accent);
-//   }
+  &:hover {
+    background-color: var(--button-color-accent);
+  }
 
-//   &:focus {
-//     background-color: var(--button-color-accent);
-//     color: var(--text-color-main);
-
-//   }
-// }
+  &:focus {
+    background-color: var(--button-color-accent);
+    color: var(--text-color-main);
+  }
+}
 
 .modal__button-close {
   border: none;
