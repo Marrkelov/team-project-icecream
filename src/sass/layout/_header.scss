@@ -9,6 +9,12 @@
   justify-content: space-between;
 }
 
+.mobile-menu-open {
+  margin-left: auto;
+  line-height: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: $to-tablet) {
   .page-header {
     padding-top: 12px;
@@ -31,13 +37,6 @@
   .header__button {
     display: none;
   }
-
-  .mobile-menu-open {
-    fill: var(--social-color-accent);
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-  }
 }
 
 // /======TABLET===========/
@@ -58,13 +57,6 @@
 
   .header__button-icon {
     margin-left: 10px;
-  }
-
-  .mobile-menu-open {
-    fill: var(--social-color-accent);
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
   }
 }
 
