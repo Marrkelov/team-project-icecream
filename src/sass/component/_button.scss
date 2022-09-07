@@ -26,29 +26,25 @@
 .hero__button {
   padding: 7px 16px;
   border-radius: 10px;
+  background-color: transparent;
 
   border: 2px solid var(--button-color-main);
 
   @include font(8px, 600, 10px, 0.03em, var(--text-color-button));
 
-  background-color: transparent;
+  @media screen and (min-width: $desktop) {
+    @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
+  }
 
   transition: border-color var(--speed-animation) var(--animation-type),
-    color var(--speed-animation) var(--animation-type),
-    fill var(--speed-animation) var(--animation-type);
+    color var(--speed-animation) var(--animation-type);
 
   &:hover {
     border-color: var(--button-color-accent);
   }
 
   &:focus {
-    background-color: var(--button-color-accent);
     color: var(--text-color-main);
-    fill: var(--text-color-main);
-  }
-
-  @media screen and (min-width: $desktop) {
-    @include font(14px, 600, 18px, 0.03em, var(--text-color-button));
   }
 }
 
