@@ -1,0 +1,17 @@
+.modal {
+  position: absolute;
+  @extend %position-center;
+
+  border-radius: 10px;
+
+  background-color: var(--background-color-modal);
+  border: 2px solid var(--border-modal);
+
+  @media screen and (max-width: $to-tablet) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+  }
+}

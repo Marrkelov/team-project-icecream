@@ -1,21 +1,4 @@
-body.modal-open {
-  overflow: hidden;
-}
-
-.modal {
-  position: absolute;
-  @extend %position-center;
-
-  width: 94vw;
-
-  @media screen and (min-width: $mobile) {
-    width: 280px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 568px;
-  }
-
+.read-more-modal {
   // height: auto;
   padding: 28px;
   // margin: 90px 15px;

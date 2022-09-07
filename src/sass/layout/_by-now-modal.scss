@@ -1,21 +1,17 @@
 .by-now-modal {
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
   border: 2px solid var(--border-modal);
   border-radius: 10px;
   padding: 28px 30px;
+  background: var(--background-color-address);
 
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 280px;
-
-  @media screen and (min-width: $tablet) {
-    width: 568px;
+  @media screen and (max-width: $to-tablet) {
+    margin-top: 100px;
   }
 
-  background: var(--background-color-address);
+  @media screen and (min-width: $tablet) {
+    padding: 32px 54px;
+  }
 }
 
 .modal__button-close {
@@ -50,12 +46,14 @@
 .modal-products__cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 94px;
   margin-bottom: 24px;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
-    gap: 0;
+    justify-content: space-between;
+    gap: 33px;
   }
 }
 
@@ -64,26 +62,24 @@
   flex-direction: column;
   width: 132px;
   height: 135px;
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 24px;
 }
 
 .modal-product-cards__item-first {
   border: 2px solid var(--icecream-color);
-  border-radius: 15.7808px;
+  border-radius: 16px;
   position: relative;
 }
 
 .modal-product-cards__item-second {
   background: var(--icecoffee-color);
-  border-radius: 15.7808px;
+  border-radius: 16px;
   position: relative;
 }
 
 .modal-product-cards__item-third {
   border: 2px solid var(--milkshakes-color);
-  border-radius: 15.7808px;
+  border-radius: 16px;
   position: relative;
 }
 
