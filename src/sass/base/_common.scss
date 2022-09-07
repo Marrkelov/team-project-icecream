@@ -10,6 +10,10 @@ body {
   background-color: var(--background-color-main);
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

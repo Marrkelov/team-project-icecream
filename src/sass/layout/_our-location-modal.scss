@@ -1,0 +1,74 @@
+.our-location-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 28px;
+  background-color: var(--background-color-modal);
+  border: 2px solid var(--border-modal);
+  border-radius: 10px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--speed-animation) var(--animation-type);
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+@media screen and (min-width: $desktop) {
+  .modal-product-cards {
+    display: flex;
+  }
+}
+
+.modal__button-icon {
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.modal__text {
+  margin-bottom: 20px;
+
+  font-family: var(--title-font);
+  @include font(16px, 400, 24px, 0.04em, var(--text-color-titles));
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+    @include font(20px, 400, 28px, 0.04em, var(--text-color-titles));
+  }
+}
+.modal__map {
+  width: 224px;
+  height: 199px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+  @media screen and (min-width: $tablet) {
+    width: 448px;
+    height: 260px;
+    padding-bottom: 32px;
+  }
+}
+
+.modal__button-link {
+  @include font(12px, 600, 15px, 0.03em, var(--text-color-button));
+
+  &:focus {
+    color: var(--text-color-main);
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include font(14px, 600, 17px, 0.03em, var(--text-color-button));
+  }
+}

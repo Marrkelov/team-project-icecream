@@ -6,6 +6,13 @@
   width: 100vw;
   height: 100vh;
 
+  overflow: auto;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);

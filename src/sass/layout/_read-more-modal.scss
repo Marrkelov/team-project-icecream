@@ -1,3 +1,4 @@
+
 body.modal-open {
   overflow: hidden;
 }
@@ -15,6 +16,9 @@ body.modal-open {
   @media screen and (min-width: $tablet) {
     width: 568px;
   }
+
+
+.read-more-modal {
 
   // height: auto;
   padding: 28px;

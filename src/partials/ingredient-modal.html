@@ -1,0 +1,112 @@
+<div class="data-modal is-hidden" ingredient-modal>
+  <div class="modal modal__products">
+    <button type="button" class="modal-close-btn" ingredient-modal-close>
+      <svg class="modal-close-btn-icon" width="20" height="20">
+        <use href="/src/images/sprite.svg#menu-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
+      <p class="modal-form__title">Chocolate icecream</p>
+      <div class="modale__img-wrap"></div>
+      <ul class="nutrition__list">
+        <li class="nutrition__item list">
+          <div class="nutrition__item-wrap">
+            <div class="nutrition__wrap">
+              <span class="nutrition__item-index">320</span>
+            </div>
+            <span>kcal</span>
+          </div>
+        </li>
+        <li class="nutrition__item list">
+          <div class="nutrition__item-wrap">
+            <div class="nutrition__wrap">
+              <span class="nutrition__item-index">4g</span>
+            </div>
+            <span>Prote...</span>
+          </div>
+        </li>
+        <li class="nutrition__item list">
+          <div class="nutrition__item-wrap">
+            <div class="nutrition__wrap">
+              <span class="nutrition__item-index">8,2g</span>
+            </div>
+            <span>Fats</span>
+          </div>
+        </li>
+        <li class="nutrition__item list">
+          <div class="nutrition__item-wrap">
+            <div class="nutrition__wrap">
+              <span class="nutrition__item-index">40,4g</span>
+            </div>
+            <span>Carbs</span>
+          </div>
+        </li>
+      </ul>
+      <table class="table">
+        <caption class="table__ingredients-title">
+          Ingredients
+        </caption>
+        <tbody>
+          <tr>
+            <td>Milk</td>
+            <td class="ingredients-amount">100ml</td>
+          </tr>
+          <tr>
+            <td>Belgian chocolate</td>
+            <td class="ingredients-amount">20g</td>
+          </tr>
+          <tr>
+            <td>Cream</td>
+            <td class="ingredients-amount">150 ml</td>
+          </tr>
+          <tr>
+            <td>Cocoa powder</td>
+            <td class="ingredients-amount">30g</td>
+          </tr>
+          <tr>
+            <td>Sugar</td>
+            <td class="ingredients-amount">40g</td>
+          </tr>
+          <tr>
+            <td>Vanilla sugar</td>
+            <td class="ingredients-amount">10g</td>
+          </tr>
+        </tbody>
+      </table>
+      <label class="modal-form__field"
+        ><span class="modal-form__input-wrapper">
+          <input
+            type="text"
+            class="modal-form__input"
+            name="user_name"
+            placeholder="Name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+            minlength="2"
+          />
+        </span>
+      </label>
+      <label class="modal-form__field"
+        ><span class="modal-form__input-wrapper">
+          <input
+            type="tel"
+            class="modal-form__input"
+            name="user_phone"
+            placeholder="Phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+          />
+        </span>
+      </label>
+      <label class="modal-form__field modal-form__field-comment">
+        <textarea
+          class="modal-form__message"
+          name="user_comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type=" button" class="button modal-form-submit">Submit</button>
+    </form>
+  </div>
+</div>
