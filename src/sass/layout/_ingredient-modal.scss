@@ -8,7 +8,6 @@
   left: 50%;
 
   overflow: scroll;
-
   &::-webkit-scrollbar {
     display: none;
   }
@@ -132,10 +131,7 @@
 }
 
 .table {
-  border-collapse: separate;
-  border-spacing: 11px;
-  font-family: 'Montserrat';
-  font-style: normal;
+  width: 100%;
   @include font(14px, 400, 26px, 0.04em, var(--text-color-titles));
 
   margin-bottom: 48px;
@@ -159,6 +155,7 @@
 
 .modal-form__field {
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .modal-form__field-comment {
